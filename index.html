@@ -1,0 +1,1083 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SIB</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SIB">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="robots" content="noindex,nofollow">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<style>html{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}@media (max-width:860px){html,body{background:#FFFFFF}}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: presenter stage — phone-sized app frame beside a function checklist; full-screen app on phones. Single light look by choice (branded app UI). */
+:root{
+  --navy:#34327F; --navy-2:#24225E; --navy-ink:#1B1A45; --orange:#F37021; --orange-soft:#FDEBDF;
+  --bg:#F3F3F9; --card:#FFFFFF; --line:#E1E1EE; --ink:#1B1A33; --muted:#66667E; --soft:#EEEEF7;
+  --good:#1E8E5A; --good-soft:#E3F4EB; --warn:#B7791F; --warn-soft:#FBF0D9; --bad:#C2392F; --bad-soft:#FBE5E3;
+  --ev:#1E7FD8; --phev:#7A4BD1; --hyb:#1E8E5A; --wa:#25D366;
+  --stage:#E9E9F3; --stage-ink:#2A2850;
+  --f-display:"Saira","Arial Narrow",system-ui,sans-serif; --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif; --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+html,body{height:100%}
+body{background:var(--stage);color:var(--ink);font-family:var(--f-body);font-size:14px;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+input,select,textarea{font:inherit;color:var(--ink)}
+:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.stage{min-height:100%;display:flex;gap:32px;justify-content:center;align-items:flex-start;padding-block:28px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.phone{position:relative;width:392px;height:820px;max-height:calc(100vh - 56px);min-height:640px;background:var(--bg);border-radius:44px;border:10px solid #15142E;box-shadow:0 30px 60px -20px rgba(27,26,69,.45);overflow:hidden;flex:none;display:flex;flex-direction:column}
+.panel{width:400px;max-width:100%;min-width:0;color:var(--stage-ink)}
+@media (max-width:860px){
+  .stage{padding:0;gap:0;display:block;height:100%}
+  .phone{width:100%;height:100%;max-height:none;min-height:0;border:0;border-radius:0;box-shadow:none}
+  .panel{display:none}
+  .panel.open{display:block;position:fixed;inset:0;z-index:60;width:auto;background:var(--stage);overflow:auto;padding:16px}
+  .demo-chip{display:flex!important}
+}
+/* status bar */
+.sbar{height:30px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 22px;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;background:var(--sbar,var(--card));color:var(--sbar-ink,var(--ink))}
+@media (max-width:860px){.sbar{display:none}}
+.app{flex:1;min-height:0;display:flex;flex-direction:column;position:relative}
+.top{flex:none;display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);min-height:56px}
+.top .logo{height:26px;width:auto}
+.top h1{font-family:var(--f-display);font-size:18px;font-weight:700;margin:0;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top .sp{flex:1}
+.ibtn{position:relative;width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:var(--navy)}
+.ibtn:hover{background:var(--soft)}
+.badge{position:absolute;top:3px;right:2px;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:var(--orange);color:#fff;font-size:10.5px;font-weight:700;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.scroll{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;padding:16px 16px 96px;-webkit-overflow-scrolling:touch}
+.scroll.nopad{padding:0 0 96px}
+.nav{flex:none;display:grid;grid-template-columns:repeat(5,1fr);background:var(--card);border-top:1px solid var(--line);padding:6px 4px 8px}
+.nav button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 0;font-size:11px;font-weight:600;color:var(--muted)}
+.nav button.on{color:var(--navy)}
+.nav button.on svg{color:var(--orange)}
+svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+svg.i.sm{width:18px;height:18px}
+svg.i.xs{width:15px;height:15px}
+/* type */
+.h2{font-family:var(--f-display);font-size:20px;font-weight:700;margin:0 0 4px;text-wrap:balance;letter-spacing:-.005em}
+.h3{font-family:var(--f-display);font-size:16px;font-weight:700;margin:0;letter-spacing:.005em}
+.lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:12.5px}
+.mono{font-family:var(--f-mono)}
+.num{font-variant-numeric:tabular-nums}
+.stack{display:flex;flex-direction:column;gap:12px}
+.row{display:flex;align-items:center;gap:10px}
+.row>.grow{flex:1;min-width:0}
+.sec{display:flex;align-items:baseline;justify-content:space-between;margin:20px 0 10px}
+.sec:first-child{margin-top:0}
+.link{color:var(--navy);font-weight:700;font-size:13px}
+/* cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+.list{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.li{display:flex;align-items:center;gap:12px;padding:13px 14px;border-top:1px solid var(--line);width:100%;text-align:left}
+.li:first-child{border-top:0}
+button.li:hover{background:#FAFAFD}
+.li .grow{flex:1;min-width:0}
+.li .t{font-weight:600}
+.li .s{font-size:12.5px;color:var(--muted);margin-top:2px}
+.ico{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--soft);color:var(--navy);flex:none}
+.ico.or{background:var(--orange-soft);color:var(--orange)}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 18px;border-radius:14px;font-weight:700;font-size:15px;background:var(--navy);color:#fff;width:100%}
+.btn:hover{background:var(--navy-2)}
+.btn.or{background:var(--orange)}
+.btn.or:hover{background:#DD5F12}
+.btn.ghost{background:var(--card);color:var(--navy);border:1.5px solid var(--line)}
+.btn.ghost:hover{border-color:var(--navy)}
+.btn.sm{height:36px;font-size:13px;border-radius:11px;width:auto;padding:0 14px}
+.btn.danger{background:var(--card);color:var(--bad);border:1.5px solid var(--bad-soft)}
+.btn[disabled]{opacity:.45;pointer-events:none}
+.btns{display:flex;gap:10px}
+.btns>*{flex:1}
+.footer{position:absolute;left:0;right:0;bottom:0;padding:12px 16px 16px;background:linear-gradient(to top,var(--bg) 70%,rgba(243,243,249,0));z-index:5}
+/* chips & pills */
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;height:34px;padding:0 14px;border-radius:17px;border:1.5px solid var(--line);background:var(--card);font-weight:600;font-size:13px;display:inline-flex;align-items:center;gap:6px}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.pill{display:inline-flex;align-items:center;gap:4px;height:22px;padding:0 9px;border-radius:11px;font-size:11px;font-weight:700;letter-spacing:.02em;white-space:nowrap}
+.pt-EV{background:#E2EFFB;color:var(--ev)}.pt-PHEV{background:#EEE7FA;color:var(--phev)}.pt-HYBRID{background:var(--good-soft);color:var(--hyb)}
+.st-good{background:var(--good-soft);color:var(--good)}.st-warn{background:var(--warn-soft);color:var(--warn)}.st-bad{background:var(--bad-soft);color:var(--bad)}.st-info{background:#E2EFFB;color:var(--ev)}.st-mute{background:var(--soft);color:var(--muted)}.st-or{background:var(--orange-soft);color:#C4550F}
+/* hero */
+.hero{background:var(--navy);color:#fff;border-radius:20px;padding:18px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-40px;top:-30px;width:180px;height:180px;border-radius:50%;border:26px solid rgba(243,112,33,.22)}
+.hero .k{font-size:12px;opacity:.75;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.hero .car{font-family:var(--f-display);font-size:22px;font-weight:700;margin:4px 0 2px}
+.plate{display:inline-block;font-family:var(--f-mono);font-weight:700;font-size:12px;background:#fff;color:var(--navy-ink);border-radius:6px;padding:2px 7px;letter-spacing:.06em}
+.qa{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.qa button{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:11.5px;font-weight:600;text-align:center;line-height:1.2}
+.qa .ico{width:52px;height:52px;border-radius:16px;background:var(--card);border:1px solid var(--line)}
+.banner{border-radius:18px;padding:16px;color:#fff;background:linear-gradient(120deg,var(--orange),#E2531A);min-height:118px;display:flex;flex-direction:column;justify-content:space-between}
+.banner b{font-family:var(--f-display);font-size:19px;line-height:1.15;display:block;max-width:230px}
+.hscroll{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}
+.hscroll::-webkit-scrollbar{display:none}
+.hscroll>*{flex:none;width:250px}
+/* service card */
+.svc{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left}
+.svc .ph{width:64px;height:64px;border-radius:14px;flex:none;display:grid;place-items:center;color:#fff}
+.price{font-weight:700;font-variant-numeric:tabular-nums}
+.strike{text-decoration:line-through;color:var(--muted);font-weight:500;font-size:12px;margin-left:4px}
+.stars{display:inline-flex;gap:1px;color:#F2A31B}
+.stars svg{width:14px;height:14px;fill:currentColor;stroke:none}
+/* grid of brands */
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.brand{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 6px;display:flex;flex-direction:column;align-items:center;gap:8px;font-weight:600;font-size:12.5px;text-align:center}
+.mono-logo{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:15px;color:var(--navy);background:var(--soft);letter-spacing:.02em}
+/* form */
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:12.5px;font-weight:700;color:var(--ink)}
+.inp{height:48px;border-radius:13px;border:1.5px solid var(--line);background:var(--card);padding:0 14px;width:100%}
+.inp:focus{outline:none;border-color:var(--navy)}
+.inp.err{border-color:var(--bad)}
+textarea.inp{height:auto;padding:12px 14px;min-height:88px;resize:vertical}
+.hint{font-size:12px;color:var(--muted)}
+.errt{font-size:12px;color:var(--bad);font-weight:600}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:13px}
+.check input{width:18px;height:18px;margin-top:1px;accent-color:var(--navy);flex:none}
+/* calendar/time */
+.days{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px}
+.days::-webkit-scrollbar{display:none}
+.day{flex:none;width:58px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);padding:8px 0;display:flex;flex-direction:column;align-items:center;gap:1px}
+.day .dw{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase}
+.day .dn{font-family:var(--f-display);font-size:20px;font-weight:700}
+.day .dm{font-size:10.5px;color:var(--muted)}
+.day.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.day.on .dw,.day.on .dm{color:rgba(255,255,255,.75)}
+.day.off{opacity:.38;pointer-events:none;background:repeating-linear-gradient(135deg,var(--card) 0 6px,var(--soft) 6px 12px)}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.slot{border-radius:13px;border:1.5px solid var(--line);background:var(--card);padding:9px 4px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.slot b{font-family:var(--f-mono);font-size:14px}
+.slot span{font-size:10.5px;color:var(--good);font-weight:700}
+.slot.low span{color:var(--warn)}
+.slot.full{background:var(--soft);pointer-events:none}
+.slot.full b{color:var(--muted);text-decoration:line-through}
+.slot.full span{color:var(--muted)}
+.slot.on{border-color:var(--orange);background:var(--orange-soft)}
+.steps{display:flex;gap:6px;margin-bottom:14px}
+.steps i{flex:1;height:4px;border-radius:2px;background:var(--line)}
+.steps i.on{background:var(--orange)}
+.timer{display:flex;align-items:center;gap:10px;background:var(--warn-soft);color:#7A4E0E;border-radius:14px;padding:11px 14px;font-weight:600;font-size:13px}
+.timer b{font-family:var(--f-mono);font-size:16px;margin-left:auto}
+/* summary rows */
+.kv{display:flex;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px}
+.kv span:first-child{color:var(--muted)}
+.kv span:last-child{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.kv.total{border-top:1px dashed var(--line);margin-top:6px;padding-top:12px;font-size:16px}
+.kv.total span{color:var(--ink);font-weight:800}
+/* segmented */
+.seg{display:flex;background:var(--soft);border-radius:13px;padding:4px;gap:4px}
+.seg button{flex:1;height:34px;border-radius:10px;font-weight:700;font-size:13px;color:var(--muted)}
+.seg button.on{background:var(--card);color:var(--navy);box-shadow:0 1px 3px rgba(27,26,69,.12)}
+/* gateway */
+.gw{background:#F7F8FA;min-height:100%}
+.gw .url{display:flex;align-items:center;gap:8px;background:#E9EAEE;border-radius:10px;padding:7px 10px;font-size:12px;color:#444;font-family:var(--f-mono)}
+.radio{display:flex;align-items:center;gap:12px;padding:13px 14px;border:1.5px solid var(--line);border-radius:14px;background:#fff;width:100%;text-align:left}
+.radio.on{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.dot{width:18px;height:18px;border-radius:50%;border:2px solid var(--line);flex:none}
+.radio.on .dot{border:5px solid var(--navy)}
+/* member card */
+.mcard{border-radius:20px;padding:18px;color:#fff;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-ink) 100%);position:relative;overflow:hidden;min-height:190px;display:flex;flex-direction:column;justify-content:space-between}
+.mcard::before{content:"";position:absolute;right:-60px;bottom:-80px;width:230px;height:230px;border-radius:50%;background:radial-gradient(circle,rgba(243,112,33,.55),rgba(243,112,33,0) 70%)}
+.mcard.gold{background:linear-gradient(135deg,#5B4310 0%,#2D2108 100%)}
+/* sheet & toast */
+.scrim{position:absolute;inset:0;background:rgba(20,19,46,.45);z-index:40;display:flex;align-items:flex-end;animation:fade .18s ease}
+.sheet{background:var(--card);width:100%;border-radius:24px 24px 0 0;padding:10px 16px 20px;max-height:86%;overflow:auto;animation:up .22s ease}
+.sheet .grab{width:40px;height:4px;border-radius:2px;background:var(--line);margin:0 auto 14px}
+@keyframes up{from{transform:translateY(30px);opacity:0}}
+@keyframes fade{from{opacity:0}}
+.push{position:absolute;left:10px;right:10px;top:10px;z-index:50;background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:18px;padding:11px 13px;box-shadow:0 12px 30px -10px rgba(27,26,69,.35);display:flex;gap:11px;align-items:flex-start;animation:drop .28s ease}
+.push .pi{width:34px;height:34px;border-radius:9px;background:var(--navy);display:grid;place-items:center;flex:none}
+.push .pi img{width:26px}
+.push .pt{font-size:11px;color:var(--muted);font-weight:600}
+.push .pb{font-weight:700;font-size:13px}
+.push .pd{font-size:12.5px;color:var(--ink)}
+@keyframes drop{from{transform:translateY(-20px);opacity:0}}
+.toast{position:absolute;left:50%;bottom:92px;transform:translateX(-50%);background:var(--navy-ink);color:#fff;padding:10px 16px;border-radius:12px;font-weight:600;font-size:13px;z-index:45;white-space:nowrap;max-width:92%;overflow:hidden;text-overflow:ellipsis;animation:fade .2s}
+/* whatsapp fab */
+.fab{position:absolute;right:16px;bottom:84px;width:54px;height:54px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 20px -6px rgba(37,211,102,.7);z-index:20}
+.fab svg{width:28px;height:28px;fill:#fff}
+/* auth */
+.auth{flex:1;min-height:0;overflow:auto;background:var(--navy);color:#fff;display:flex;flex-direction:column;padding:28px 22px 24px;position:relative}
+.auth .glow{position:absolute;right:-90px;top:120px;width:300px;height:300px;border-radius:50%;border:40px solid rgba(243,112,33,.18)}
+.auth .big{font-family:var(--f-display);font-size:34px;line-height:1.05;font-weight:800;margin:0;text-wrap:balance;position:relative}
+.auth .tag{display:flex;gap:8px;flex-wrap:wrap;position:relative}
+.authf{flex:1;min-height:0;overflow:auto;background:var(--card);padding:20px 16px 24px}
+.otp{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.otp input{height:54px;text-align:center;font-family:var(--f-mono);font-size:22px;font-weight:700;border-radius:13px;border:1.5px solid var(--line);width:100%;min-width:0}
+/* qr */
+.qr{background:#fff;padding:10px;border-radius:14px;border:1px solid var(--line);display:inline-block}
+.qr svg{display:block}
+/* admin */
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px}
+.stat .v{font-family:var(--f-display);font-size:24px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
+.stat .d{font-size:11.5px;color:var(--good);font-weight:700}
+.tl{display:flex;gap:12px}
+.tl .tm{width:50px;flex:none;font-family:var(--f-mono);font-weight:700;font-size:12.5px;padding-top:14px;color:var(--navy)}
+.tl .bx{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px;padding-bottom:12px;border-left:2px solid var(--line);padding-left:12px}
+.adminbar{background:var(--navy-ink);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 16px;display:flex;justify-content:space-between}
+.toggle{width:44px;height:26px;border-radius:13px;background:var(--line);position:relative;flex:none;transition:background .15s}
+.toggle::after{content:"";position:absolute;left:3px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2);transition:left .15s}
+.toggle.on{background:var(--good)}
+.toggle.on::after{left:21px}
+.stepper{display:flex;align-items:center;gap:4px;background:var(--soft);border-radius:12px;padding:3px}
+.stepper button{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:var(--card);font-weight:800}
+.stepper b{min-width:28px;text-align:center;font-variant-numeric:tabular-nums}
+.empty{text-align:center;padding:36px 12px;color:var(--muted)}
+.empty .ico{margin:0 auto 10px;width:56px;height:56px;border-radius:18px}
+.note{background:var(--soft);border-radius:12px;padding:10px 12px;font-size:12.5px;color:var(--muted);display:flex;gap:8px}
+.note svg{color:var(--navy);flex:none;margin-top:1px}
+.legal p{line-height:1.6;margin:0 0 12px;color:#33334A}
+.legal h4{font-family:var(--f-display);font-size:15px;margin:16px 0 6px}
+/* presenter panel */
+.panel h2{font-family:var(--f-display);font-size:22px;font-weight:800;margin:0;color:var(--navy-ink);letter-spacing:-.01em}
+.panel .pcard{background:#fff;border:1px solid #D9D9E8;border-radius:18px;padding:14px;margin-top:14px}
+.fn{display:grid;grid-template-columns:26px 1fr auto;gap:8px;align-items:center;padding:7px 4px;border-top:1px solid #EDEDF5;font-size:13px;width:100%;text-align:left;border-radius:8px}
+.fn:first-child{border-top:0}
+.fn:hover{background:#F6F6FB}
+.fn .n{font-family:var(--f-mono);font-weight:700;font-size:11.5px;color:var(--muted)}
+.fn .go{font-size:11.5px;font-weight:700;color:var(--orange)}
+.ctl{display:flex;flex-wrap:wrap;gap:8px}
+.ctl button{height:34px;padding:0 12px;border-radius:10px;border:1.5px solid #D9D9E8;background:#fff;font-weight:700;font-size:12.5px;color:var(--navy)}
+.ctl button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.flow{margin:0;padding-left:20px;font-size:13px;line-height:1.55}
+.flow li{margin-bottom:3px}
+.demo-chip{display:none;position:absolute;left:50%;transform:translateX(-50%);top:8px;z-index:30;height:26px;padding:0 10px;border-radius:13px;background:var(--navy-ink);color:#fff;font-size:11px;font-weight:700;align-items:center;gap:5px;opacity:.85}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="stage">
+  <div class="phone" id="phone">
+    <div class="sbar" id="sbar"><span id="clock">9:41</span><span>5G ▪ 92%</span></div>
+    <div class="app" id="app"></div>
+  </div>
+  <aside class="panel" id="panel"></aside>
+</div>
+
+<script>
+const LOGO="data:image/png;base64,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", LOGO_W="data:image/png;base64,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";
+/* ---------- icons ---------- */
+const P={
+home:'<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+wrench:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.5-.4-.4-2.5z"/>',
+cal:'<rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/>',
+learn:'<path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/>',
+user:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+bell:'<path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4z"/><path d="M10 21h4"/>',
+cart:'<path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.7a1.5 1.5 0 0 0 1.5-1.1L21 8H6"/><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/>',
+bolt:'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+plug:'<path d="M9 2v5M15 2v5M6 7h12v4a6 6 0 0 1-12 0zM12 17v5"/>',
+leaf:'<path d="M5 19c0-9 6-14 15-14 0 9-5 15-14 15"/><path d="M5 19 13 11"/>',
+star:'<path d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/>',
+gift:'<rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13M12 8c-1.5-3-6-4-6-1.5S9.5 8 12 8c2.5 0 6-.5 6-3S13.5 5 12 8"/>',
+right:'<path d="m9 5 7 7-7 7"/>',
+left:'<path d="m15 5-7 7 7 7"/>',
+x:'<path d="M6 6l12 12M18 6 6 18"/>',
+check:'<path d="m4.5 12.5 5 5 10-11"/>',
+clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+shield:'<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>',
+qr:'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M20 20h-3v-3M14 20v.01"/>',
+car:'<path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v3h-3v-1H6v1H3zM5 11h14"/><circle cx="7.5" cy="13.5" r=".8"/><circle cx="16.5" cy="13.5" r=".8"/>',
+users:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6 6 0 0 1 3.5 6"/>',
+settings:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 0 1-4 0v-.1A1.6 1.6 0 0 0 7.4 19.6l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H3a2 2 0 0 1 0-4h.1A1.6 1.6 0 0 0 4.4 7.4l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 2.7-1.1V3a2 2 0 0 1 4 0v.1a1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0 1.1 2.7H21a2 2 0 0 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/>',
+mega:'<path d="M3 10v4l11 5V5zM14 8h3a3 3 0 0 1 0 6h-3M6 15.5 7.5 21h3L9 16.8"/>',
+file:'<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M8.5 13h7M8.5 17h5"/>',
+card:'<rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6 15h4"/>',
+crown:'<path d="m3 8 4.5 4L12 5l4.5 7L21 8l-2 11H5z"/>',
+coin:'<circle cx="12" cy="12" r="9"/><path d="M14.8 9.2c-.6-.8-1.6-1.2-2.8-1.2-1.7 0-3 .9-3 2.1 0 2.8 6 1.4 6 4.1 0 1.2-1.3 2-3 2-1.3 0-2.5-.5-3-1.4M12 6v2M12 16v2"/>',
+out:'<path d="M15 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4M10 16l-4-4 4-4M6 12h11"/>',
+plus:'<path d="M12 5v14M5 12h14"/>',
+minus:'<path d="M5 12h14"/>',
+trash:'<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>',
+copy:'<rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4"/>',
+share:'<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.4M8.2 13.2l7.6 4.4"/>',
+pin:'<path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>',
+chart:'<path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/>',
+grid:'<rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/>',
+battery:'<rect x="2.5" y="7" width="17" height="10" rx="2"/><path d="M22 10.5v3M11 9l-2 3h4l-2 3"/>',
+lock:'<rect x="4.5" y="10.5" width="15" height="10.5" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/>',
+history:'<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7.5V12l3 2"/>',
+info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.8v.1"/>',
+eye:'<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+scan:'<path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3M7 12h10"/>',
+ticket:'<path d="M3 8a2 2 0 0 0 0 4v0a2 2 0 0 1 0 4v2h18v-2a2 2 0 0 1 0-4 2 2 0 0 1 0-4V6H3z"/><path d="M14 6v12" stroke-dasharray="2 2"/>',
+};
+const ic=(n,c='')=>`<svg class="i ${c}" viewBox="0 0 24 24" aria-hidden="true">${P[n]||''}</svg>`;
+const WA='<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.4 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>';
+const starRow=(v,size='')=>`<span class="stars">${[1,2,3,4,5].map(i=>`<svg viewBox="0 0 24 24" style="opacity:${i<=Math.round(v)?1:.25}">${P.star}</svg>`).join('')}</span>`;
+
+/* ---------- helpers ---------- */
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const RM=sen=>'RM '+(sen/100).toLocaleString('en-MY',{minimumFractionDigits:2,maximumFractionDigits:2});
+const T0=new Date();T0.setHours(0,0,0,0);
+const addD=n=>{const d=new Date(T0);d.setDate(d.getDate()+n);return d};
+const iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const dOf=s=>new Date(s+'T00:00:00');
+const fDate=s=>dOf(s).toLocaleDateString('en-MY',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+const fShort=s=>dOf(s).toLocaleDateString('en-MY',{day:'numeric',month:'short'});
+const nowStamp=()=>new Date().toLocaleTimeString('en-MY',{hour:'2-digit',minute:'2-digit'});
+const TODAY=iso(T0);
+const rnd=(n=5)=>{const a='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';let s='';for(let i=0;i<n;i++)s+=a[Math.floor(Math.random()*a.length)];return s};
+const hash=s=>{let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))|0;return Math.abs(h)};
+const maskIC=ic=>ic?'******-**-'+ic.replace(/\D/g,'').slice(-4):'';
+
+/* ---------- sample data (clearly placeholder) ---------- */
+const BRANDS=[['byd','BYD'],['proton','Proton'],['tesla','Tesla'],['toyota','Toyota'],['honda','Honda'],['bmw','BMW'],['merc','Mercedes-Benz'],['hyundai','Hyundai'],['mitsu','Mitsubishi']].map(([id,name])=>({id,name}));
+const MODELS=[['atto3','byd','Atto 3','EV'],['seal','byd','Seal','EV'],['dolphin','byd','Dolphin','EV'],['sealion6','byd','Sealion 6 DM-i','PHEV'],['emas7','proton','e.MAS 7','EV'],['m3','tesla','Model 3','EV'],['my','tesla','Model Y','EV'],['cc','toyota','Corolla Cross Hybrid','HYBRID'],['camry','toyota','Camry Hybrid','HYBRID'],['alphard','toyota','Alphard Hybrid','HYBRID'],['city','honda','City e:HEV','HYBRID'],['hrv','honda','HR-V e:HEV','HYBRID'],['ix1','bmw','iX1','EV'],['i4','bmw','i4','EV'],['x5','bmw','X5 xDrive50e','PHEV'],['330e','bmw','330e','PHEV'],['eqa','merc','EQA','EV'],['c350e','merc','C 350 e','PHEV'],['ioniq5','hyundai','Ioniq 5','EV'],['tucson','hyundai','Tucson Hybrid','HYBRID'],['outl','mitsu','Outlander PHEV','PHEV']].map(([id,b,name,pt])=>({id,b,name,pt}));
+const PTL={EV:'EV',PHEV:'PHEV',HYBRID:'Hybrid'};
+const CATS={battery:['Battery',ic('battery'),'#1E7FD8'],insp:['Inspection',ic('shield'),'#34327F'],brakes:['Brakes',ic('wrench'),'#C2392F'],comfort:['Comfort',ic('leaf'),'#1E8E5A'],tyres:['Tyres',ic('car'),'#5A5A72'],engine:['Engine',ic('bolt'),'#F37021']};
+const S0SVC=[
+ {id:'s1',n:'EV Battery Health Check',cat:'battery',pt:['EV','PHEV'],p:14900,m:11900,dur:60,d:'State-of-health report for the high-voltage battery: cell balance, capacity estimate, thermal behaviour and error-code scan. Printed report included.'},
+ {id:'s2',n:'High-Voltage System Inspection',cat:'insp',pt:['EV','PHEV','HYBRID'],p:19900,m:16900,dur:90,d:'Insulation resistance test, HV cable and connector inspection, inverter and DC-DC converter check by a certified HV technician.'},
+ {id:'s3',n:'Hybrid Battery Diagnostic',cat:'battery',pt:['HYBRID','PHEV'],p:17900,m:14900,dur:60,d:'Module voltage spread, cooling fan and duct check, and battery ECU scan for hybrid packs.'},
+ {id:'s4',n:'Brake Fluid & Regen Brake Service',cat:'brakes',pt:['EV','PHEV','HYBRID'],p:15900,m:13500,dur:60,d:'Brake fluid replacement, caliper slide clean, and regenerative braking calibration check. EVs use friction brakes less, so corrosion checks matter.'},
+ {id:'s5',n:'Cabin Filter & A/C Service',cat:'comfort',pt:['EV','PHEV','HYBRID'],p:12900,m:10900,dur:45,d:'Cabin filter replacement, A/C performance test and electric compressor check.'},
+ {id:'s6',n:'Tyre Rotation & Alignment',cat:'tyres',pt:['EV','PHEV','HYBRID'],p:12000,m:9900,dur:60,d:'Rotation, wheel alignment and pressure set for heavier EV and hybrid curb weights.'},
+ {id:'s7',n:'Battery Coolant Flush',cat:'battery',pt:['EV','PHEV'],p:28900,m:24900,dur:120,d:'Drain and refill of the battery thermal-management coolant with a pressure and leak test.'},
+ {id:'s8',n:'PHEV & Hybrid Engine Oil Service',cat:'engine',pt:['PHEV','HYBRID'],p:23900,m:19900,dur:60,d:'Low-viscosity engine oil and filter change with a 30-point inspection.'},
+ {id:'s9',n:'Charging Port & Cable Check',cat:'insp',pt:['EV','PHEV'],p:8900,m:6900,dur:30,d:'Charge-port pin and seal inspection, portable charger and cable test, AC and DC charging handshake test.'},
+ {id:'s10',n:'Software & Firmware Update Check',cat:'insp',pt:['EV','PHEV'],p:9900,m:7900,dur:45,d:'Checks vehicle ECUs against the latest manufacturer software and applies dealer-level updates where available.'},
+];
+const PLANS=[{id:'silver',n:'SIB Silver',per:'month',p:2900,disc:'Member prices on all services',mult:1.2,ben:['Member prices on every service','1.2× points on every payment','Priority WhatsApp support']},
+             {id:'gold',n:'SIB Gold',per:'year',p:29900,disc:'Member prices + free yearly battery check',mult:1.5,ben:['Member prices on every service','1.5× points on every payment','1 free EV/Hybrid Battery Health Check a year','Priority booking slots & event invites']}];
+const TRAIN=[
+ {id:'t1',n:'EV Ownership Basics',cat:'Owners',d:'Charging habits, battery care, range planning and what the dashboard warnings mean. Ideal for new EV and PHEV owners.',learn:['Home vs public charging','Keeping the battery healthy','Reading range and efficiency','What to do in a breakdown'],sess:[{id:'t1a',day:9,t:'10:00 – 13:00',mode:'Onsite',seats:20,taken:14,p:9900,m:7900},{id:'t1b',day:23,t:'10:00 – 13:00',mode:'Online (live)',seats:40,taken:12,p:6900,m:4900}]},
+ {id:'t2',n:'Home Charging Setup & Safety',cat:'Owners',d:'Choosing a wall charger, wiring and load considerations, and safe use of portable chargers at home.',learn:['Wallbox options and power levels','Electrical safety basics','Smart charging schedules'],sess:[{id:'t2a',day:16,t:'14:00 – 16:00',mode:'Onsite',seats:15,taken:13,p:7900,m:5900}]},
+ {id:'t3',n:'High-Voltage Safety for Technicians – Level 1',cat:'Professional',d:'Hands-on course for workshop staff on working safely around HV systems in EV, PHEV and hybrid vehicles.',learn:['HV isolation procedure','PPE and insulated tools','Rescue and first response'],sess:[{id:'t3a',day:30,t:'09:00 – 17:00 (2 days)',mode:'Onsite',seats:12,taken:5,p:120000,m:105000}]},
+];
+const EVENTS=[
+ {id:'e1',n:'EV & Hybrid Open Day',day:19,t:'10:00 – 17:00',v:'SIB Service Centre',d:'Test drives with partner brands, free battery health screenings and talks from SIB technicians.',rsvp:true},
+ {id:'e2',n:'Members’ Battery Check Week',day:28,t:'All week, during opening hours',v:'SIB Service Centre',d:'Members get a free 15-minute battery screening during this week. Book any slot and mention the event.',rsvp:true},
+ {id:'e3',n:'PHEV Owners Meetup',day:40,t:'20:00 – 22:00',v:'SIB Service Centre',d:'Evening meetup for PHEV owners: share tips, meet the team, and preview new services.',rsvp:true},
+];
+const LEGAL={terms:['Terms of Use',`<p>These Terms of Use govern your use of the SIB mobile application. By creating an account you agree to them.</p><h4>1. Your account</h4><p>Keep your login details safe. You are responsible for bookings and purchases made with your account.</p><h4>2. Bookings</h4><p>A time slot is held for 10 minutes while you pay. It is confirmed only after payment succeeds.</p><h4>3. Changes</h4><p>We may update these terms. If we do, the app will ask you to accept the new version.</p><p class="muted small">Placeholder text for the proof of concept. Final wording will come from SIB's legal team.</p>`],
+privacy:['Privacy Policy (PDPA)',`<p>SIB processes your personal data in line with the Personal Data Protection Act 2010.</p><h4>What we collect</h4><p>Name, phone, email, IC number (for identity check at the service centre), your vehicles and your booking and purchase history.</p><h4>How we protect it</h4><p>Your IC number is encrypted and shown masked. Card details are entered only on the payment gateway's page and never stored by SIB.</p><h4>Your rights</h4><p>You can view, correct or delete your data from Profile, or contact SIB.</p><p class="muted small">Placeholder text for the proof of concept.</p>`],
+refund:['Refund & Cancellation Policy',`<p>You can reschedule or cancel a booking up to 24 hours before the slot.</p><h4>Refunds</h4><p>Refunds for cancelled bookings are processed by SIB HQ to the original payment method.</p><p class="muted small">Placeholder text. Cancellation window and refund rules to be confirmed by SIB.</p>`],
+member:['Membership Terms',`<p>Membership starts once payment is confirmed and lasts for the plan period. Benefits apply only while membership is active.</p><p>Renewing early extends from your current expiry date.</p><p class="muted small">Placeholder text for the proof of concept.</p>`],
+points:['Points & Referral Terms',`<p>Earn 1 point for every RM 1 paid in the app (members earn more). Service points are credited when the service is completed. Points expire 12 months after they are earned.</p><p>Referral rewards are credited when your friend completes their first paid booking. Self-referral is not allowed.</p><p class="muted small">Placeholder text. Point values to be confirmed by SIB.</p>`]};
+const HOURS=['09:00','10:00','11:00','12:00','14:00','15:00','16:00','17:00'];
+const OTHER=[['Tan Wei Ming','my','WTA 7781'],['Nurul Huda Zakaria','city','BPK 3412'],['Rajesh Kumar','x5','VFH 909'],['Lim Siew Ling','atto3','VKR 6620'],['Hafiz Rahman','ioniq5','JRS 4471'],['Chong Kah Wai','camry','WXE 1288'],['Siti Aishah Omar','emas7','VJN 5203'],['Daniel Wong','outl','PQA 8814']];
+
+/* ---------- state ---------- */
+let S;
+function fresh(){
+ const svc=S0SVC.map(s=>({...s,active:true,ratings:[]}));
+ const rv=[['s1',5,'Very detailed report, explained everything about my battery.','Lim S.L.'],['s1',4,'Quick and clear. Waiting area could be cooler.','Hafiz R.'],['s2',5,'Professional HV team. Felt safe leaving my car here.','Rajesh K.'],['s3',4,'Found a weak module early. Good value.','Chong K.W.'],['s4',5,'Booked in the app, done in an hour.','Nurul H.'],['s5',4,'A/C feels brand new.','Daniel W.'],['s6',5,'No more pulling to the left.','Tan W.M.'],['s9',5,'They found a loose pin in my charger cable.','Siti A.'],['s10',4,'Got the latest update installed.','Tan W.M.'],['s7',5,'Thorough and on time.','Lim S.L.'],['s8',4,'Good service, fair price.','Chong K.W.']];
+ rv.forEach(([sid,st,c,who],i)=>svc.find(x=>x.id===sid).ratings.push({id:'r'+i,stars:st,c,who,hidden:false,reply:''}));
+ const train=TRAIN.map(t=>({...t,sess:t.sess.map(x=>({...x,date:iso(addD(x.day))}))}));
+ const ev=EVENTS.map(e=>({...e,date:iso(addD(e.day)),pub:true}));
+ const st={
+  role:null, auth:'welcome', stack:[], tab:'home', admTab:'adash',
+  user:{name:'Ahmad Faizal bin Rahim',email:'faizal.demo@example.com',phone:'+60 12-345 6789',ic:'880815-10-5521',code:'SIB7K2QX'},
+  vehicles:[{id:'v1',model:'atto3',plate:'VKX 2381',year:2024,colour:'Ski White'},{id:'v2',model:'cc',plate:'WB 8812 Q',year:2023,colour:'Celestite Grey'}],
+  defVeh:'v1', pt:'EV', svc, train:train, events:ev, rsvp:{},
+  cart:[], bookings:[], orders:[], tickets:[], ledger:[], sub:null,
+  notifs:{c:[],a:[]}, audit:[], cap:3, sunClosed:true, holdMin:10, wa:'+60 3-XXXX XXXX', ptsRate:1,
+  race:false, draft:null, timer:null, prefs:{promo:true},
+  friends:[{n:'Nur Aina',s:'Rewarded',pts:100},{n:'Hakim Ridzuan',s:'Joined · waiting for first booking',pts:0},{n:'Mei Ling Tan',s:'Joined · waiting for first booking',pts:0}],
+  seed:{}, termsVer:'1.2', acceptedVer:'1.2',
+ };
+ // past completed booking (unrated) + upcoming confirmed + training ticket
+ const o0={id:'o0',no:'SIB-ORD-24811',kind:'service',items:[{n:'EV Battery Health Check',p:14900},{n:'Charging Port & Cable Check',p:8900}],total:23800,status:'paid',date:iso(addD(-18)),method:'FPX · Maybank2u',ref:'FPX2410'+rnd(4)};
+ const b0={id:'b0',no:'BK-'+rnd(6),who:'me',name:st.user.name,veh:'v1',items:['s1','s9'],date:iso(addD(-18)),time:'10:00',status:'COMPLETED',order:'o0',rated:false};
+ const o1={id:'o1',no:'SIB-ORD-25107',kind:'service',items:[{n:'Hybrid Battery Diagnostic',p:17900}],total:17900,status:'paid',date:iso(addD(-2)),method:'Card · Visa ••4417',ref:'CRD'+rnd(6)};
+ const b1={id:'b1',no:'BK-'+rnd(6),who:'me',name:st.user.name,veh:'v2',items:['s3'],date:iso(nextOpen(6)),time:'14:00',status:'CONFIRMED',order:'o1',rated:false};
+ const o2={id:'o2',no:'SIB-ORD-24990',kind:'training',items:[{n:'EV Ownership Basics · 1 pax',p:9900}],total:9900,status:'paid',date:iso(addD(-10)),method:'Touch ’n Go eWallet',ref:'TNG'+rnd(6)};
+ st.tickets.push({id:'tk0',sess:'t1a',train:'t1',order:'o2',code:'TK-'+rnd(6)});
+ st.train[0].sess[0].taken+=0;
+ st.orders.push(o1,o2,o0); st.bookings.push(b1,b0);
+ // other customers' bookings for admin
+ const stats=['CONFIRMED','CHECKED_IN','IN_PROGRESS','COMPLETED','CONFIRMED','CONFIRMED','IN_PROGRESS','CONFIRMED'];
+ OTHER.forEach(([n,m,pl],i)=>{const vid='ov'+i;st.bookings.push({id:'ob'+i,no:'BK-'+rnd(6),who:n,name:n,veh:vid,vmodel:m,plate:pl,items:[S0SVC[(i*3)%10].id],date:TODAY,time:HOURS[i%HOURS.length],status:T0.getDay()===0?'CONFIRMED':stats[i],ic:'9'+(i+1)+'0'+(i+2)+'1'+(i)+'-14-'+(4000+i*137)})});
+ // ledger
+ st.ledger.push({d:iso(addD(-60)),t:'Welcome bonus',v:50},{d:iso(addD(-30)),t:'Referral reward · Nur Aina',v:100},{d:iso(addD(-18)),t:'Service completed · '+b0.no,v:238},{d:iso(addD(-10)),t:'Training · EV Ownership Basics',v:99});
+ st.notifs.c.push(
+  {id:'n1',t:'Booking reminder',b:`Your Hybrid Battery Diagnostic is on ${fShort(b1.date)} at 2:00 PM.`,d:'2h ago',read:false,go:['bkd',{id:'b1'}]},
+  {id:'n2',t:'How was your service?',b:'Rate your EV Battery Health Check and help other owners.',d:'Yesterday',read:false,go:['rate',{id:'b0'}]},
+  {id:'n3',t:'New event: EV & Hybrid Open Day',b:'Free battery screenings and test drives. Tap to register.',d:'2 days ago',read:true,go:['event',{id:'e1'}]},
+  {id:'n4',t:'You earned 99 points',b:'From your EV Ownership Basics training purchase.',d:'10 days ago',read:true,go:['points']});
+ st.notifs.a.push(
+  {id:'a1',t:'New booking',b:'Tan Wei Ming · Model Y · today 09:00',d:'08:12',read:false},
+  {id:'a2',t:'Low rating alert',b:'2★ on Cabin Filter & A/C Service: "Waited 30 minutes past my slot."',d:'Yesterday',read:false},
+  {id:'a3',t:'Booking cancelled',b:'Daniel Wong cancelled a booking on '+fShort(iso(addD(3)))+' 11:00.',d:'Yesterday',read:true});
+ st.svc.find(s=>s.id==='s5').ratings.push({id:'rlow',stars:2,c:'Waited 30 minutes past my slot.',who:'Kevin L.',hidden:false,reply:''});
+ st.audit.push({t:'Updated price · Battery Coolant Flush',who:'HQ Admin (Nadia)',d:'Yesterday 16:40'},{t:'Created event · PHEV Owners Meetup',who:'HQ Admin (Nadia)',d:'2 days ago'});
+ return st;
+}
+function nextOpen(n){let d=addD(n);while(d.getDay()===0)d.setDate(d.getDate()+1);return d}
+S=fresh();
+
+/* ---------- derived ---------- */
+const model=id=>MODELS.find(m=>m.id===id);
+const brandOf=id=>BRANDS.find(b=>b.id===id);
+const veh=id=>S.vehicles.find(v=>v.id===id);
+const vName=v=>{if(!v)return'';const m=model(v.model||v.vmodel);return m?brandOf(m.b).name+' '+m.name:''};
+const svc=id=>S.svc.find(s=>s.id===id);
+const isMember=()=>!!(S.sub&&S.sub.status==='active');
+const priceOf=s=>isMember()?s.m:s.p;
+const avg=s=>{const r=s.ratings.filter(x=>!x.hidden);return r.length?r.reduce((a,b)=>a+b.stars,0)/r.length:0};
+const visR=s=>s.ratings.filter(x=>!x.hidden);
+const mine=()=>S.bookings.filter(b=>b.who==='me');
+const points=()=>S.ledger.reduce((a,b)=>a+b.v,0);
+const unread=r=>S.notifs[r].filter(n=>!n.read).length;
+const tSess=id=>{for(const t of S.train){const x=t.sess.find(s=>s.id===id);if(x)return{t,x}}};
+function seedTaken(date,time){const k=date+' '+time;if(S.seed[k]!=null)return S.seed[k];
+ const tom=iso(nextOpen(1));let v=hash(k)%3; if(date===tom&&time==='10:00')v=S.cap-1; if(date===tom&&time==='11:00')v=S.cap; if(date===TODAY)v=Math.min(S.cap,v+1); return v}
+function slotInfo(date,time){
+ const now=new Date(); const dt=new Date(date+'T'+time+':00');
+ if(dt<=now) return {left:0,past:true};
+ let used=seedTaken(date,time);
+ S.bookings.forEach(b=>{if(b.date===date&&b.time===time&&b.who==='me'&&(b.status==='CONFIRMED'||(b.status==='PENDING_PAYMENT'&&b.hold>Date.now())))used++});
+ return {left:Math.max(0,S.cap-used),past:false};
+}
+const dayOpen=d=>!(S.sunClosed&&d.getDay()===0);
+const STL={PENDING_PAYMENT:['Pending payment','st-warn'],CONFIRMED:['Confirmed','st-info'],CHECKED_IN:['Checked in','st-or'],IN_PROGRESS:['In progress','st-or'],COMPLETED:['Completed','st-good'],CANCELLED:['Cancelled','st-mute'],EXPIRED:['Expired','st-mute'],NO_SHOW:['No-show','st-bad']};
+const stPill=s=>`<span class="pill ${STL[s][1]}">${STL[s][0]}</span>`;
+const ptPill=pt=>`<span class="pill pt-${pt}">${PTL[pt]}</span>`;
+const bTotal=b=>b.items.reduce((a,id)=>a+(b.prices?b.prices[id]:priceOf(svc(id))),0);
+const fTime=t=>{const [h,m]=t.split(':').map(Number);return `${((h+11)%12)+1}:${String(m).padStart(2,'0')} ${h<12?'AM':'PM'}`};
+
+/* ---------- navigation ---------- */
+const MAIN_C=['home','services','bookings','learn','profile'], MAIN_A=['adash','abook','amanage','aalerts','aprofile'];
+const cur=()=>S.stack[S.stack.length-1]||{s:S.role==='admin'?S.admTab:S.tab};
+function go(s,p={}){S.stack.push({s,...p});ui.sheet=null;render(true)}
+function back(){S.stack.pop();ui.sheet=null;render(true)}
+function tab(t){S.stack=[];if(S.role==='admin')S.admTab=t;else S.tab=t;ui.sheet=null;render(true)}
+const ui={sheet:null,toast:null,push:null,bkStep:1,form:{},err:{},seg:{},pay:{m:'fpx',bank:'Maybank2u'},rate:5};
+
+/* ---------- toast & push ---------- */
+let tT,pT;
+function toast(m){ui.toast=m;clearTimeout(tT);tT=setTimeout(()=>{ui.toast=null;drawOverlay()},2400);drawOverlay()}
+function push(role,t,b,goTo){const n={id:'n'+Date.now()+rnd(2),t,b,d:'now',read:false,go:goTo};S.notifs[role==='admin'?'a':'c'].unshift(n);
+ if((role==='admin')===(S.role==='admin')){ui.push={t,b};clearTimeout(pT);pT=setTimeout(()=>{ui.push=null;drawOverlay()},3800);drawOverlay()}}
+
+/* ---------- render ---------- */
+const app=document.getElementById('app');
+function render(resetScroll){
+ const sc=app.querySelector('.scroll'); const y=sc&&!resetScroll?sc.scrollTop:0;
+ let html='';
+ if(!S.role) html=authView()+`<button class="demo-chip" data-act="openPanel">${ic('grid','xs')} Demo guide</button>`;
+ else {
+  const c=cur(); const fn=V[c.s]; html=fn?fn(c):'<div class="scroll">Missing screen '+c.s+'</div>';
+ }
+ app.innerHTML=html+'<div id="ov"></div>';
+ const sb=document.getElementById('sbar');
+ const dark=!S.role||(cur().s==='payres'&&false);
+ sb.style.setProperty('--sbar',dark?'var(--navy)':'var(--card)');sb.style.setProperty('--sbar-ink',dark?'#fff':'var(--ink)');
+ const sc2=app.querySelector('.scroll'); if(sc2) sc2.scrollTop=y;
+ drawOverlay(); renderPanel();
+}
+function drawOverlay(){const o=document.getElementById('ov');if(!o)return;let h='';
+ if(ui.push)h+=`<div class="push" role="status"><div class="pi"><img src="${LOGO_W}" alt=""></div><div class="grow" style="min-width:0"><div class="pt">SIB · now</div><div class="pb">${esc(ui.push.t)}</div><div class="pd">${esc(ui.push.b)}</div></div></div>`;
+ if(ui.toast)h+=`<div class="toast" role="status">${esc(ui.toast)}</div>`;
+ if(ui.sheet)h+=`<div class="scrim" data-act="closeSheet"><div class="sheet" data-stop="1"><div class="grab"></div>${ui.sheet()}</div></div>`;
+ o.innerHTML=h}
+
+function topBar(title,{backBtn=false,actions=true}={}){
+ const cartN=S.cart.length;
+ const left=backBtn?`<button class="ibtn" data-act="back" aria-label="Back">${ic('left')}</button>`:`<img class="logo" src="${LOGO}" alt="SIB">`;
+ const right=actions?(S.role==='admin'?`<button class="ibtn" data-tab="aalerts" aria-label="Alerts">${ic('bell')}${unread('a')?`<span class="badge">${unread('a')}</span>`:''}</button>`:
+ `<button class="ibtn" data-go="notifs" aria-label="Notifications">${ic('bell')}${unread('c')?`<span class="badge">${unread('c')}</span>`:''}</button><button class="ibtn" data-go="cart" aria-label="Cart">${ic('cart')}${cartN?`<span class="badge">${cartN}</span>`:''}</button>`):'';
+ return `${S.role==='admin'?'<div class="adminbar"><span>Admin mode · SIB HQ</span><span>Demo data</span></div>':''}<div class="top">${left}${title?`<h1>${esc(title)}</h1>`:'<span class="sp"></span>'}${right}</div><button class="demo-chip" data-act="openPanel">${ic('grid','xs')} Demo guide</button>`}
+function nav(){
+ const items=S.role==='admin'?[['adash','chart','Today'],['abook','cal','Bookings'],['amanage','grid','Manage'],['aalerts','bell','Alerts'],['aprofile','user','Account']]
+  :[['home','home','Home'],['services','wrench','Services'],['bookings','cal','Bookings'],['learn','learn','Learn'],['profile','user','Profile']];
+ const on=S.role==='admin'?S.admTab:S.tab;
+ return `<nav class="nav">${items.map(([k,i,l])=>`<button class="${on===k&&!S.stack.length?'on':''}" data-tab="${k}">${ic(i)}${l}</button>`).join('')}</nav>`}
+const fab=(ctx='')=>`<button class="fab" data-act="wa" data-arg="${esc(ctx)}" aria-label="Chat with SIB on WhatsApp">${WA}</button>`;
+const shell=(title,body,{backBtn=false,wa=true,navOn,foot='',nopad=false}={})=>{if(navOn===undefined)navOn=!foot;return `${topBar(title,{backBtn})}<div class="scroll ${nopad?'nopad':''}">${body}</div>${foot?`<div class="footer">${foot}</div>`:''}${wa&&S.role==='customer'?fab(typeof wa==='string'?wa:''):''}${navOn?nav():''}`};
+const empty=(i,t,s,btn='')=>`<div class="empty"><div class="ico">${ic(i)}</div><div class="h3" style="color:var(--ink)">${t}</div><div class="small" style="margin:4px 0 14px">${s}</div>${btn}</div>`;
+const note=t=>`<div class="note">${ic('info','xs')}<span>${t}</span></div>`;
+function qrSvg(seed,size=132){const n=21,c=size/n;let r='';const h=x=>hash(seed+x);
+ const fin=(x,y)=>`<rect x="${x*c}" y="${y*c}" width="${7*c}" height="${7*c}" fill="#1B1A33"/><rect x="${(x+1)*c}" y="${(y+1)*c}" width="${5*c}" height="${5*c}" fill="#fff"/><rect x="${(x+2)*c}" y="${(y+2)*c}" width="${3*c}" height="${3*c}" fill="#1B1A33"/>`;
+ for(let y=0;y<n;y++)for(let x=0;x<n;x++){if((x<8&&y<8)||(x>12&&y<8)||(x<8&&y>12))continue;if(h(x+'.'+y)%2)r+=`<rect x="${x*c}" y="${y*c}" width="${c+.3}" height="${c+.3}" fill="#1B1A33"/>`}
+ return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="QR code ${esc(seed)}"><rect width="${size}" height="${size}" fill="#fff"/>${r}${fin(0,0)}${fin(14,0)}${fin(0,14)}</svg>`}
+const svcIco=s=>`<div class="ph" style="background:${CATS[s.cat][2]}">${CATS[s.cat][1]}</div>`;
+const priceHtml=s=>isMember()?`<span class="price">${RM(s.m)}</span><span class="strike">${RM(s.p)}</span>`:`<span class="price">${RM(s.p)}</span> <span class="small muted">· Members ${RM(s.m)}</span>`;
+
+/* ---------- auth ---------- */
+function authView(){
+ const a=S.auth;
+ if(a==='welcome') return `<div class="auth"><div class="glow"></div><img src="${LOGO_W}" alt="SIB" style="width:120px;position:relative"><div style="flex:1;min-height:40px"></div>
+  <div class="tag"><span class="pill" style="background:rgba(255,255,255,.12);color:#fff">EV</span><span class="pill" style="background:rgba(255,255,255,.12);color:#fff">PHEV</span><span class="pill" style="background:rgba(255,255,255,.12);color:#fff">Hybrid</span></div>
+  <h2 class="big" style="margin-top:12px">Service your electrified car, booked in a minute.</h2>
+  <p style="opacity:.8;position:relative;line-height:1.5">Pick your car, choose a service and lock in your slot. Earn points every time you pay in the app.</p>
+  <div class="stack" style="margin-top:18px;position:relative"><button class="btn or" data-act="auth" data-arg="register">Create account</button><button class="btn ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.35)" data-act="auth" data-arg="login">Log in</button></div>
+  <div style="margin-top:18px;border-top:1px solid rgba(255,255,255,.15);padding-top:14px;position:relative"><div class="lbl" style="color:rgba(255,255,255,.6);margin-bottom:8px">Demo shortcuts</div><div class="btns"><button class="btn sm" style="background:rgba(255,255,255,.12)" data-act="demoLogin" data-arg="customer">${ic('user','sm')} Customer</button><button class="btn sm" style="background:rgba(255,255,255,.12)" data-act="demoLogin" data-arg="admin">${ic('shield','sm')} HQ Admin</button></div></div></div>`;
+ const head=(t,s)=>`<div class="top"><button class="ibtn" data-act="auth" data-arg="welcome" aria-label="Back">${ic('left')}</button><h1>${t}</h1></div>`;
+ const f=ui.form,e=ui.err;
+ if(a==='login') return head('Log in')+`<div class="authf"><div class="stack">
+  <p class="muted" style="margin:0">Customers and SIB HQ admins log in here. The app opens the right view for your account.</p>
+  <div class="field"><label for="lg-id">Email or mobile number</label><input class="inp" id="lg-id" value="${esc(f.lid??'faizal.demo@example.com')}" data-f="lid"></div>
+  <div class="field"><label for="lg-pw">Password</label><input class="inp" id="lg-pw" type="password" value="demo1234" data-f="lpw"></div>
+  <button class="link" style="align-self:flex-end" data-act="toast" data-arg="Reset code sent to your email (demo)">Forgot password?</button>
+  <button class="btn" data-act="doLogin">Log in</button>
+  ${note('Tip: log in with <b>admin@sib.demo</b> to open Admin mode. After 5 wrong passwords, login locks for 15 minutes.')}
+  </div></div>`;
+ if(a==='register') return head('Create account')+`<div class="authf"><div class="stack">
+  ${fld('rg-n','Full name','rn','Ahmad Faizal bin Rahim')}${fld('rg-e','Email','re','faizal.demo@example.com','email')}${fld('rg-p','Mobile number','rp','012-345 6789','tel','Malaysian number, e.g. 012-345 6789')}
+  ${fld('rg-pw','Password','rpw','demo1234','password','At least 8 characters with a letter and a number')}
+  <div class="field"><label for="rg-ref">Referral code (optional)</label><input class="inp ${e.rref?'err':''}" id="rg-ref" data-f="rref" value="${esc(f.rref??'')}" placeholder="e.g. SIB7K2QX" style="text-transform:uppercase">${e.rref?`<span class="errt">${e.rref}</span>`:'<span class="hint">Got a code from a friend? You both earn points.</span>'}</div>
+  <label class="check"><input type="checkbox" id="rg-t" ${f.rt?'checked':''} data-fc="rt"><span>I agree to the <button class="link" data-act="legalAuth" data-arg="terms">Terms of Use</button> and <button class="link" data-act="legalAuth" data-arg="privacy">Privacy Policy</button></span></label>${e.rt?`<span class="errt">${e.rt}</span>`:''}
+  <button class="btn or" data-act="doRegister">Create account</button></div></div>`;
+ if(a==='otp') return head('Verify email')+`<div class="authf"><div class="stack">
+  <div class="ico or" style="width:56px;height:56px">${ic('shield')}</div><h2 class="h2">Enter the 6-digit code</h2><p class="muted" style="margin:0">We sent a code to <b>${esc(f.re||'faizal.demo@example.com')}</b>. It expires in 5 minutes.</p>
+  <div class="otp">${[4,8,2,6,1,9].map((d,i)=>`<input id="otp${i}" inputmode="numeric" maxlength="1" value="${d}" aria-label="Digit ${i+1}">`).join('')}</div>
+  <span class="hint">Demo code is pre-filled. Resend available after 60 seconds.</span>
+  <button class="btn or" data-act="doOtp">Verify & continue</button></div></div>`;
+ if(a==='legal'){const L=LEGAL[ui.legal];return `<div class="top"><button class="ibtn" data-act="auth" data-arg="register" aria-label="Back">${ic('left')}</button><h1>${L[0]}</h1></div><div class="authf legal">${L[1]}</div>`}
+}
+function fld(id,label,key,def,type='text',hint=''){const f=ui.form,e=ui.err;return `<div class="field"><label for="${id}">${label}</label><input class="inp ${e[key]?'err':''}" id="${id}" type="${type}" data-f="${key}" value="${esc(f[key]??def)}">${e[key]?`<span class="errt">${e[key]}</span>`:hint?`<span class="hint">${hint}</span>`:''}</div>`}
+
+/* ---------- views ---------- */
+const V={};
+V.home=()=>{const v=veh(S.defVeh),m=model(v.model);const up=mine().filter(b=>['CONFIRMED','CHECKED_IN','IN_PROGRESS'].includes(b.status)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time))[0];
+ const pop=S.svc.filter(s=>s.active&&s.pt.includes(m.pt)).slice(0,4);
+ return shell('',`<div class="stack">
+  <div><div class="muted small">Selamat pagi,</div><div class="h2" style="margin:0">${esc(S.user.name.split(' ')[0])} ${isMember()?`<span class="pill" style="background:#F6E7C1;color:#6B4B0C;vertical-align:middle">${ic('crown','xs')} ${S.sub.plan==='gold'?'Gold':'Silver'}</span>`:''}</div></div>
+  <div class="hero"><div class="row"><div class="grow"><div class="k">My garage</div><div class="car">${esc(vName(v))}</div><span class="plate">${esc(v.plate)}</span> ${ptPill(m.pt)}</div></div>
+   <div class="row" style="margin-top:14px;position:relative;z-index:1"><button class="btn or sm" data-act="startBook">${ic('cal','sm')} Book service</button><button class="btn sm" style="background:rgba(255,255,255,.14)" data-go="garage">Switch car</button></div></div>
+  ${up?`<button class="card row" style="width:100%;text-align:left" data-go="bkd" data-id="${up.id}"><div class="ico">${ic('clock')}</div><div class="grow"><div class="lbl">Next booking</div><div style="font-weight:700;margin-top:2px">${fDate(up.date)} · ${fTime(up.time)}</div><div class="small muted">${esc(svc(up.items[0]).n)}${up.items.length>1?' +'+(up.items.length-1):''}</div></div>${stPill(up.status)}</button>`:''}
+  <div class="qa">
+   <button data-act="startBook"><span class="ico">${ic('cal')}</span>Book service</button>
+   <button data-tab="bookings"><span class="ico">${ic('history')}</span>My bookings</button>
+   <button data-go="membership"><span class="ico or">${ic('crown')}</span>Membership</button>
+   <button data-go="referral"><span class="ico">${ic('gift')}</span>Refer a friend</button>
+  </div>
+  <div class="banner"><div><div class="lbl" style="color:rgba(255,255,255,.85)">Promotion · set by HQ</div><b>Free charging-port check with any battery service this month</b></div><button class="link" style="color:#fff;align-self:flex-start" data-go="svc" data-id="s1">See battery services →</button></div>
+  <div><div class="sec"><span class="h3">For your ${PTL[m.pt]}</span><button class="link" data-act="ptGo" data-arg="${m.pt}">All services</button></div>
+   <div class="list">${pop.map(s=>`<button class="li" data-go="svc" data-id="${s.id}">${svcIco(s).replace('class="ph"','class="ph" style="width:44px;height:44px;border-radius:12px;background:'+CATS[s.cat][2]+'"')}<div class="grow"><div class="t">${esc(s.n)}</div><div class="s">${starRow(avg(s))} ${avg(s).toFixed(1)} · ${s.dur} min</div></div><div style="text-align:right">${isMember()?`<div class="price">${RM(s.m)}</div><div class="strike">${RM(s.p)}</div>`:`<div class="price">${RM(s.p)}</div>`}</div></button>`).join('')}</div></div>
+  <div><div class="sec"><span class="h3">Upcoming events</span><button class="link" data-act="learnSeg" data-arg="events">See all</button></div>
+   <div class="hscroll">${S.events.filter(e=>e.pub).map(e=>`<button class="card" style="text-align:left" data-go="event" data-id="${e.id}"><div class="lbl" style="color:var(--orange)">${fDate(e.date)}</div><div class="h3" style="margin:4px 0">${esc(e.n)}</div><div class="small muted row" style="gap:4px">${ic('pin','xs')} ${esc(e.v)}</div></button>`).join('')}</div></div>
+ </div>`)};
+
+V.services=()=>{const bs=BRANDS.filter(b=>MODELS.some(m=>m.b===b.id&&m.pt===S.pt));
+ return shell('Car services',`<div class="stack">
+  <div class="seg" role="tablist">${['EV','PHEV','HYBRID'].map(p=>`<button class="${S.pt===p?'on':''}" data-act="pt" data-arg="${p}">${PTL[p]}</button>`).join('')}</div>
+  <p class="small muted" style="margin:0">${S.pt==='EV'?'Fully electric cars.':S.pt==='PHEV'?'Plug-in hybrids: battery plus petrol engine.':'Self-charging hybrids.'} Choose your brand to see services for your model.</p>
+  <div class="sec" style="margin:4px 0 0"><span class="h3">Brands</span><span class="small muted">${bs.length} brands</span></div>
+  <div class="bgrid">${bs.map(b=>`<button class="brand" data-go="brand" data-id="${b.id}"><span class="mono-logo">${esc(b.name.replace('Mercedes-Benz','MB').slice(0,b.name.length>4?2:4).toUpperCase())}</span>${esc(b.name)}<span class="small muted">${MODELS.filter(m=>m.b===b.id&&m.pt===S.pt).length} model${MODELS.filter(m=>m.b===b.id&&m.pt===S.pt).length>1?'s':''}</span></button>`).join('')}</div>
+  <div class="sec" style="margin:8px 0 0"><span class="h3">All ${PTL[S.pt]} services</span></div>
+  <div class="list">${S.svc.filter(s=>s.active&&s.pt.includes(S.pt)).map(s=>`<button class="li" data-go="svc" data-id="${s.id}"><div class="grow"><div class="t">${esc(s.n)}</div><div class="s">${CATS[s.cat][0]} · ${s.dur} min · ${avg(s).toFixed(1)}★</div></div><div class="price">${RM(priceOf(s))}</div>${ic('right','sm')}</button>`).join('')}</div>
+  ${note('Brand names shown as text only. Brand list, models and services are sample data until SIB confirms its catalogue.')}
+ </div>`)};
+
+V.brand=c=>{const b=brandOf(c.id);const ms=MODELS.filter(m=>m.b===b.id);
+ return shell(b.name,`<div class="stack"><div class="row"><span class="mono-logo">${esc(b.name.slice(0,2).toUpperCase())}</span><div class="grow"><div class="h2" style="margin:0">${esc(b.name)}</div><div class="small muted">${ms.length} electrified models</div></div></div>
+ <div class="list">${ms.map(m=>`<button class="li" data-go="model" data-id="${m.id}"><div class="ico">${ic('car')}</div><div class="grow"><div class="t">${esc(m.name)}</div><div class="s">${S.svc.filter(s=>s.active&&s.pt.includes(m.pt)).length} services available</div></div>${ptPill(m.pt)}${ic('right','sm')}</button>`).join('')}</div></div>`,{backBtn:true})};
+
+V.model=c=>{const m=model(c.id);const list=S.svc.filter(s=>s.active&&s.pt.includes(m.pt));const cats=[...new Set(list.map(s=>s.cat))];const f=ui.seg.cat||'all';
+ return shell(m.name,`<div class="stack"><div class="card row"><div class="ico">${ic('car')}</div><div class="grow"><div class="h3">${esc(brandOf(m.b).name+' '+m.name)}</div><div class="small muted">Showing services for ${PTL[m.pt]} cars</div></div>${ptPill(m.pt)}</div>
+  ${S.vehicles.some(v=>v.model===m.id)?'':`<button class="btn ghost sm" style="width:100%" data-act="addCarModel" data-arg="${m.id}">${ic('plus','sm')} Add this car to My Garage</button>`}
+  <div class="chips"><button class="chip ${f==='all'?'on':''}" data-act="cat" data-arg="all">All</button>${cats.map(k=>`<button class="chip ${f===k?'on':''}" data-act="cat" data-arg="${k}">${CATS[k][0]}</button>`).join('')}</div>
+  ${list.filter(s=>f==='all'||s.cat===f).map(s=>`<div class="card"><button class="svc" data-go="svc" data-id="${s.id}" data-m="${m.id}">${svcIco(s)}<div class="grow" style="min-width:0"><div class="h3">${esc(s.n)}</div><div class="small muted" style="margin:3px 0 6px">${starRow(avg(s))} ${avg(s).toFixed(1)} (${visR(s).length}) · ${s.dur} min</div>${priceHtml(s)}</div></button>
+   <div class="btns" style="margin-top:12px"><button class="btn ghost sm" data-act="addSvc" data-arg="${s.id}">${ic('cart','sm')} Add to cart</button><button class="btn sm" data-act="bookNow" data-arg="${s.id}">Book now</button></div></div>`).join('')}
+ </div>`,{backBtn:true})};
+
+V.svc=c=>{const s=svc(c.id);const r=visR(s);
+ return shell('',`<div style="background:${CATS[s.cat][2]};color:#fff;padding:22px 16px 26px"><div class="ico" style="background:rgba(255,255,255,.18);color:#fff;width:52px;height:52px">${CATS[s.cat][1]}</div><div class="lbl" style="color:rgba(255,255,255,.8);margin-top:14px">${CATS[s.cat][0]}</div><div class="h2" style="font-size:24px;margin-top:2px">${esc(s.n)}</div><div class="row" style="gap:6px;margin-top:6px;flex-wrap:wrap">${s.pt.map(p=>`<span class="pill" style="background:rgba(255,255,255,.18);color:#fff">${PTL[p]}</span>`).join('')}</div></div>
+ <div style="padding:16px" class="stack">
+  <div class="card"><div class="row"><div class="grow">${priceHtml(s)}${isMember()?'<div class="small" style="color:var(--good);font-weight:700">Member price applied</div>':`<div class="small muted">Save ${RM(s.p-s.m)} with <button class="link" data-go="membership">membership</button></div>`}</div><div style="text-align:right"><div class="row small muted" style="gap:4px">${ic('clock','xs')} ${s.dur} min</div></div></div></div>
+  <div><div class="lbl" style="margin-bottom:6px">What's included</div><p style="margin:0;line-height:1.55">${esc(s.d)}</p></div>
+  <div><div class="sec"><span class="h3">Ratings</span><span class="row" style="gap:6px">${starRow(avg(s))}<b>${avg(s).toFixed(1)}</b><span class="muted small">(${r.length})</span></span></div>
+   <div class="stack">${r.length?r.slice(-10).reverse().map(x=>`<div class="card" style="padding:12px"><div class="row"><b class="grow">${esc(x.who)}</b>${starRow(x.stars)}</div><div class="small" style="margin-top:6px;line-height:1.5">${esc(x.c)}</div>${x.reply?`<div class="note" style="margin-top:8px"><b style="color:var(--navy)">SIB:</b> ${esc(x.reply)}</div>`:''}</div>`).join(''):'<div class="small muted">No ratings yet.</div>'}</div></div>
+ </div>`,{backBtn:true,nopad:true,wa:s.n,foot:`<div class="btns"><button class="btn ghost" data-act="addSvc" data-arg="${s.id}">${ic('cart','sm')} Add to cart</button><button class="btn or" data-act="bookNow" data-arg="${s.id}">Book now</button></div>`})};
+
+V.garage=()=>shell('My Garage',`<div class="stack">${S.vehicles.map(v=>{const m=model(v.model);return `<div class="card"><div class="row"><div class="ico">${ic('car')}</div><div class="grow"><div class="h3">${esc(vName(v))}</div><div class="small muted" style="margin-top:3px"><span class="plate" style="border:1px solid var(--line)">${esc(v.plate)}</span> · ${v.year} · ${esc(v.colour)}</div></div>${ptPill(m.pt)}</div>
+ <div class="row" style="margin-top:12px">${S.defVeh===v.id?`<span class="pill st-good">${ic('check','xs')} Default car</span><span class="grow"></span>`:`<button class="btn ghost sm" data-act="defVeh" data-arg="${v.id}">Set as default</button><span class="grow"></span>`}<button class="btn sm" data-act="bookFor" data-arg="${v.id}">Book for this car</button></div></div>`}).join('')}
+ <button class="btn ghost" data-go="addcar">${ic('plus','sm')} Add a car</button>${note('Services and prices follow the default car’s type (EV, PHEV or Hybrid).')}</div>`,{backBtn:true});
+
+V.addcar=()=>{const f=ui.form;const pt=f.cpt||'EV';const bs=BRANDS.filter(b=>MODELS.some(m=>m.b===b.id&&m.pt===pt));const b=f.cb&&bs.some(x=>x.id===f.cb)?f.cb:bs[0].id;
+ return shell('Add a car',`<div class="stack">
+  <div class="field"><label>Car type</label><div class="seg">${['EV','PHEV','HYBRID'].map(p=>`<button class="${pt===p?'on':''}" data-act="cpt" data-arg="${p}">${PTL[p]}</button>`).join('')}</div></div>
+  <div class="field"><label for="ac-b">Brand</label><select class="inp" id="ac-b" data-f="cb" data-rerender="1">${bs.map(x=>`<option value="${x.id}" ${x.id===b?'selected':''}>${esc(x.name)}</option>`).join('')}</select></div>
+  <div class="field"><label for="ac-m">Model</label><select class="inp" id="ac-m" data-f="cm">${MODELS.filter(m=>m.b===b&&m.pt===pt).map(m=>`<option value="${m.id}" ${f.cm===m.id?'selected':''}>${esc(m.name)}</option>`).join('')}</select></div>
+  ${fld('ac-p','Plate number','cplate','VLB 1234','text','Uppercase letters and numbers')}
+  <div class="btns"><div class="field"><label for="ac-y">Year</label><input class="inp" id="ac-y" data-f="cy" value="${esc(f.cy??'2025')}" inputmode="numeric"></div><div class="field"><label for="ac-c">Colour</label><input class="inp" id="ac-c" data-f="cc" value="${esc(f.cc??'Black')}"></div></div>
+  <button class="btn" data-act="saveCar">Save car</button></div>`,{backBtn:true,wa:false})};
+
+V.cart=()=>{const items=S.cart;const tot=cartTotal();
+ return shell('Cart',items.length?`<div class="stack">
+  ${items.some(i=>i.k==='svc')?`<div class="card row"><div class="ico">${ic('car')}</div><div class="grow"><div class="lbl">Services for</div><div style="font-weight:700">${esc(vName(veh(items.find(i=>i.k==='svc').vid)))}</div></div><span class="plate" style="border:1px solid var(--line)">${esc(veh(items.find(i=>i.k==='svc').vid).plate)}</span></div>`:''}
+  <div class="list">${items.map((it,ix)=>{if(it.k==='svc'){const s=svc(it.sid);return `<div class="li"><div class="ico">${CATS[s.cat][1]}</div><div class="grow"><div class="t">${esc(s.n)}</div><div class="s">Car service · ${s.dur} min</div></div><div class="price">${RM(priceOf(s))}</div><button class="ibtn" data-act="rmCart" data-arg="${ix}" aria-label="Remove">${ic('trash','sm')}</button></div>`}
+   const {t,x}=tSess(it.sess);const left=x.seats-x.taken;return `<div class="li" style="flex-wrap:wrap"><div class="ico or">${ic('learn')}</div><div class="grow"><div class="t">${esc(t.n)}</div><div class="s">${fShort(x.date)} · ${x.mode} · ${left} seats left</div></div><div class="stepper"><button data-act="qty" data-arg="${ix}|-1" aria-label="Fewer">−</button><b>${it.qty}</b><button data-act="qty" data-arg="${ix}|1" aria-label="More">+</button></div><div class="price" style="min-width:76px;text-align:right">${RM((isMember()?x.m:x.p)*it.qty)}</div><button class="ibtn" data-act="rmCart" data-arg="${ix}" aria-label="Remove">${ic('trash','sm')}</button></div>`}).join('')}</div>
+  <div class="card"><div class="kv"><span>Subtotal</span><span>${RM(tot.sub)}</span></div>${tot.save?`<div class="kv"><span>Member savings</span><span style="color:var(--good)">−${RM(tot.save)}</span></div>`:''}<div class="kv"><span>Points you'll earn</span><span>${Math.floor(tot.total/100*(isMember()?PLANS.find(p=>p.id===S.sub.plan).mult:1))} pts</span></div><div class="kv total"><span>Total</span><span>${RM(tot.total)}</span></div></div>
+  ${items.some(i=>i.k==='svc')?note('Next you’ll pick a date and time. Your slot is held for 10 minutes while you pay.'):''}
+  <button class="link" style="align-self:center" data-tab="services">+ Add more services</button></div>`:empty('cart','Your cart is empty','Add a car service or a training session to get started.',`<button class="btn sm" data-tab="services">Browse services</button>`),
+ {backBtn:true,wa:false,foot:items.length?`<button class="btn or" data-act="checkout">${items.some(i=>i.k==='svc')?'Choose date & time':'Proceed to payment'} · ${RM(tot.total)}</button>`:''})};
+function cartTotal(){let sub=0,total=0;S.cart.forEach(it=>{if(it.k==='svc'){const s=svc(it.sid);sub+=s.p;total+=priceOf(s)}else{const {x}=tSess(it.sess);sub+=x.p*it.qty;total+=(isMember()?x.m:x.p)*it.qty}});return{sub,total,save:sub-total}}
+
+/* booking flow */
+V.book=()=>{const d=S.draft;const st=ui.bkStep;const v=veh(d.vid);
+ const steps=`<div class="steps">${[1,2,3,4].map(i=>`<i class="${i<=st?'on':''}"></i>`).join('')}</div>`;
+ const titles=['','Your car & services','Date & time','Your details','Review booking'];
+ let body='',foot='';
+ if(st===1){body=`<div class="lbl" style="margin-bottom:8px">Step 1 of 4</div><div class="h2">Your car & services</div>
+  <div class="list" style="margin-top:12px">${S.vehicles.map(x=>{const m=model(x.model);const ok=d.items.every(id=>svc(id).pt.includes(m.pt));return `<button class="li" data-act="bkVeh" data-arg="${x.id}" ${ok?'':'disabled style="opacity:.45"'}><div class="dot" style="${d.vid===x.id?'border:5px solid var(--navy)':''}"></div><div class="grow"><div class="t">${esc(vName(x))}</div><div class="s">${esc(x.plate)}${ok?'':' · services don’t match this car type'}</div></div>${ptPill(m.pt)}</button>`}).join('')}</div>
+  <div class="sec"><span class="h3">Services</span></div><div class="list">${d.items.map(id=>{const s=svc(id);return `<div class="li"><div class="grow"><div class="t">${esc(s.n)}</div><div class="s">${s.dur} min</div></div><div class="price">${RM(priceOf(s))}</div></div>`}).join('')}</div>
+  <div class="card" style="margin-top:12px"><div class="kv"><span>Estimated time at centre</span><span>${d.items.reduce((a,id)=>a+svc(id).dur,0)} min</span></div><div class="kv total"><span>Total</span><span>${RM(d.items.reduce((a,id)=>a+priceOf(svc(id)),0))}</span></div></div>`;
+  foot=`<button class="btn" data-act="bkStep" data-arg="2">Continue</button>`}
+ if(st===2){const days=[];for(let i=0;i<30;i++)days.push(addD(i));const sel=d.date;
+  body=`<div class="lbl" style="margin-bottom:8px">Step 2 of 4</div><div class="h2">Pick a date & time</div><p class="small muted" style="margin:0 0 12px">Next 30 days. Greyed days are closed or fully booked.</p>
+  <div class="days">${days.map(x=>{const s=iso(x);const open=dayOpen(x)&&HOURS.some(h=>slotInfo(s,h).left>0);return `<button class="day ${sel===s?'on':''} ${open?'':'off'}" data-act="bkDate" data-arg="${s}"><span class="dw">${x.toLocaleDateString('en-MY',{weekday:'short'})}</span><span class="dn">${x.getDate()}</span><span class="dm">${x.toLocaleDateString('en-MY',{month:'short'})}</span></button>`}).join('')}</div>
+  ${sel?`<div class="sec"><span class="h3">${fDate(sel)}</span><span class="small muted">${S.cap} cars per slot</span></div>
+  <div class="slots">${HOURS.map(h=>{const si=slotInfo(sel,h);const full=si.left===0;return `<button class="slot ${full?'full':''} ${si.left===1?'low':''} ${d.time===h?'on':''}" data-act="bkTime" data-arg="${h}"><b>${fTime(h).replace(':00','')}</b><span>${si.past?'Passed':full?'Full':si.left===1?'1 left':si.left+' left'}</span></button>`}).join('')}</div>
+  <div class="row small muted" style="margin-top:10px;gap:14px"><span class="row" style="gap:5px"><i style="width:10px;height:10px;border-radius:3px;background:var(--good)"></i>Available</span><span class="row" style="gap:5px"><i style="width:10px;height:10px;border-radius:3px;background:var(--warn)"></i>Almost full</span><span class="row" style="gap:5px"><i style="width:10px;height:10px;border-radius:3px;background:var(--line)"></i>Full</span></div>`:''}`;
+  foot=`<button class="btn" data-act="bkStep" data-arg="3" ${d.date&&d.time?'':'disabled'}>Continue${d.time?` · ${fShort(d.date)}, ${fTime(d.time)}`:''}</button>`}
+ if(st===3){body=`<div class="lbl" style="margin-bottom:8px">Step 3 of 4</div><div class="h2">Your details</div><p class="small muted" style="margin:0 0 12px">Pre-filled from your profile. Edit if someone else is sending the car.</p><div class="stack">
+  ${fld('bf-n','Full name (as per IC)','bn',d.form.bn)}${fld('bf-p','Phone','bp',d.form.bp,'tel','Malaysian mobile number')}${fld('bf-e','Email','be',d.form.be,'email','Your receipt is sent here')}
+  <div class="field"><label for="bf-ic">IC number (MyKad)</label><input class="inp ${ui.err.bic?'err':''}" id="bf-ic" data-f="bic" data-ic="1" inputmode="numeric" maxlength="14" value="${esc(ui.form.bic??d.form.bic)}" placeholder="YYMMDD-PB-####">${ui.err.bic?`<span class="errt">${ui.err.bic}</span>`:'<span class="hint">Used to verify your identity at check-in. Stored encrypted and shown masked.</span>'}</div>
+  <div class="field"><label for="bf-nt">Notes for the technician (optional)</label><textarea class="inp" id="bf-nt" data-f="bnote" placeholder="e.g. Warning light appears when charging">${esc(ui.form.bnote??'')}</textarea></div></div>`;
+  foot=`<button class="btn" data-act="bkForm">Review booking</button>`}
+ if(st===4){const tot=d.items.reduce((a,id)=>a+priceOf(svc(id)),0);const tr=S.cart.filter(i=>i.k==='trn');const trTot=tr.reduce((a,i)=>{const {x}=tSess(i.sess);return a+(isMember()?x.m:x.p)*i.qty},0);
+  body=`<div class="lbl" style="margin-bottom:8px">Step 4 of 4</div><div class="h2">Review booking</div><div class="stack" style="margin-top:12px">
+  <div class="card"><div class="row"><div class="ico or">${ic('cal')}</div><div class="grow"><div style="font-weight:700">${fDate(d.date)}</div><div class="small muted">${fTime(d.time)} · SIB Service Centre</div></div><button class="link" data-act="bkStep" data-arg="2">Change</button></div></div>
+  <div class="card"><div class="kv"><span>Car</span><span>${esc(vName(v))} · ${esc(v.plate)}</span></div><div class="kv"><span>Name</span><span>${esc(d.form.bn)}</span></div><div class="kv"><span>Phone</span><span>${esc(d.form.bp)}</span></div><div class="kv"><span>Email</span><span>${esc(d.form.be)}</span></div><div class="kv"><span>IC</span><span class="mono">${maskIC(d.form.bic)}</span></div></div>
+  <div class="card">${d.items.map(id=>`<div class="kv"><span>${esc(svc(id).n)}</span><span>${RM(priceOf(svc(id)))}</span></div>`).join('')}${tr.map(i=>{const {t,x}=tSess(i.sess);return `<div class="kv"><span>${esc(t.n)} × ${i.qty}</span><span>${RM((isMember()?x.m:x.p)*i.qty)}</span></div>`}).join('')}<div class="kv total"><span>Total</span><span>${RM(tot+trTot)}</span></div></div>
+  <label class="check"><input type="checkbox" id="bk-t" ${ui.form.bt?'checked':''} data-fc="bt"><span>I agree to the <button class="link" data-go="legal" data-id="refund">Refund & Cancellation Policy</button>. Free reschedule up to 24 hours before the slot.</span></label>${ui.err.bt?`<span class="errt">${ui.err.bt}</span>`:''}
+  </div>`;foot=`<button class="btn or" data-act="proceedPay">${ic('lock','sm')} Proceed to payment · ${RM(tot+trTot)}</button>`}
+ return `${topBar(titles[st],{backBtn:true,actions:false})}<div class="scroll">${steps}${body}</div><div class="footer">${foot}</div>`};
+
+/* payment */
+V.pay=c=>{const o=S.orders.find(x=>x.id===c.order);const b=o.booking?S.bookings.find(x=>x.id===o.booking):null;
+ const holdLeft=b?Math.max(0,b.hold-Date.now()):null;const p=ui.pay;
+ const banks=['Maybank2u','CIMB Clicks','Public Bank','RHB Now','Bank Islam','Hong Leong Connect'];
+ if(ui.paying)return `<div class="top"><span class="sp"></span><h1 style="text-align:center">Processing payment</h1><span class="sp"></span></div><div class="scroll"><div class="empty" style="padding-top:80px"><div class="ico" style="animation:spin 1s linear infinite">${ic('clock')}</div><div class="h3" style="color:var(--ink)">${ui.paying}</div><div class="small" style="margin-top:6px">Don’t close the app.</div></div></div><style>@keyframes spin{to{transform:rotate(360deg)}}</style>`;
+ return `<div class="top" style="flex-direction:column;align-items:stretch;gap:8px"><div class="row"><button class="ibtn" data-act="cancelPay" aria-label="Cancel payment">${ic('x')}</button><h1>Secure payment</h1><span class="pill st-warn">Sandbox</span></div><div class="url">${ic('lock','xs')} pay.gateway-sandbox.my/bill/${o.no.slice(-5)}</div></div>
+ <div class="scroll gw"><div class="stack">
+  ${b&&b.status==='PENDING_PAYMENT'?`<div class="timer">${ic('lock','sm')} Slot held for you<b id="holdT">${fmtHold(holdLeft)}</b></div>`:''}
+  <div class="card"><div class="row"><img src="${LOGO}" alt="SIB" style="height:22px"><span class="grow small muted" style="text-align:right">Order ${o.no}</span></div><div class="kv total" style="border-top:0;margin-top:4px"><span>Amount</span><span>${RM(o.total)}</span></div></div>
+  <div class="lbl">Payment method</div>
+  ${[['fpx','FPX Online Banking','Pay from your bank account'],['card','Credit / Debit card','Visa, Mastercard'],['ew','E-wallet','Touch ’n Go, GrabPay, Boost']].map(([k,t,s])=>`<button class="radio ${p.m===k?'on':''}" data-act="payM" data-arg="${k}"><span class="dot"></span><div class="grow"><div style="font-weight:700">${t}</div><div class="small muted">${s}</div></div>${ic(k==='fpx'?'home':k==='card'?'card':'coin','sm')}</button>`).join('')}
+  ${p.m==='fpx'?`<div class="field"><label for="pg-bank">Bank</label><select class="inp" id="pg-bank" data-pay="bank">${banks.map(x=>`<option ${p.bank===x?'selected':''}>${x}</option>`).join('')}</select></div>`:''}
+  ${p.m==='card'?note('Card details are typed on the gateway’s own page. The SIB app and server never see or store the card number.'):''}
+  ${p.m==='ew'?`<div class="chips">${['Touch ’n Go eWallet','GrabPay','Boost'].map(x=>`<button class="chip ${p.ew===x?'on':''}" data-act="payEw" data-arg="${x}">${x}</button>`).join('')}</div>`:''}
+  ${note('Demo: this page stands in for the payment gateway (e.g. Billplz, ToyyibPay, Fiuu or iPay88 in sandbox). The booking is confirmed only after the gateway’s server callback is verified.')}
+ </div></div><div class="footer" style="background:#F7F8FA"><button class="btn" data-act="payNow">Pay ${RM(o.total)}</button><button class="link" style="display:block;margin:10px auto 0" data-act="payFail">Simulate failed payment</button></div>`};
+const fmtHold=ms=>{const s=Math.ceil(ms/1000);return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`};
+
+V.payres=c=>{const o=S.orders.find(x=>x.id===c.order);const ok=o.status==='paid';const b=o.booking?S.bookings.find(x=>x.id===o.booking):null;
+ if(!ok){const alive=!b||(b.status==='PENDING_PAYMENT'&&b.hold>Date.now());return `<div class="top"><span class="sp"></span></div><div class="scroll"><div class="empty" style="padding-top:40px"><div class="ico" style="background:var(--bad-soft);color:var(--bad)">${ic('x')}</div><div class="h2" style="color:var(--ink)">Payment not completed</div><div class="small" style="margin:6px 0 16px">${!b?'No money was taken. You can try again.':alive?'Your slot is still held. Try again before the timer runs out.':'The hold ended and your slot was released. Please book again.'}</div>${alive&&b?`<div class="timer" style="max-width:280px;margin:0 auto 16px">${ic('lock','sm')} Slot held<b id="holdT">${fmtHold(b.hold-Date.now())}</b></div>`:''}</div></div>
+  <div class="footer"><div class="stack">${alive?`<button class="btn or" data-act="retryPay" data-arg="${o.id}">Try payment again</button>`:`<button class="btn" data-act="startBook">Book again</button>`}<button class="btn ghost" data-act="home">Back to home</button></div></div>`}
+ const isB=!!b;const tks=S.tickets.filter(t=>t.order===o.id);
+ return `<div class="top"><span class="sp"></span><button class="ibtn" data-act="home" aria-label="Close">${ic('x')}</button></div><div class="scroll"><div class="stack" style="align-items:center;text-align:center">
+  <div class="ico" style="width:64px;height:64px;border-radius:50%;background:var(--good-soft);color:var(--good)">${ic('check')}</div>
+  <div class="h2">${isB?'Booking confirmed':o.kind==='membership'?'Welcome to '+esc(PLANS.find(p=>p.id===S.sub.plan).n):'Payment successful'}</div>
+  <div class="muted small">Payment verified by the gateway · ${esc(o.method)} · Ref ${o.ref}</div>
+  ${isB?`<div class="card" style="width:100%"><div class="lbl">Booking number</div><div class="mono" style="font-size:20px;font-weight:700;margin:2px 0 12px">${b.no}</div><div class="qr">${qrSvg(b.no)}</div><div class="small muted" style="margin-top:8px">Show this QR at the counter to check in</div>
+   <div style="text-align:left;margin-top:12px"><div class="kv"><span>Date</span><span>${fDate(b.date)}</span></div><div class="kv"><span>Time</span><span>${fTime(b.time)} <span class="pill st-good">${ic('lock','xs')} Locked</span></span></div><div class="kv"><span>Car</span><span>${esc(vName(veh(b.veh)))}</span></div></div></div>`:''}
+  ${tks.length?`<div class="card" style="width:100%;text-align:left"><div class="lbl" style="margin-bottom:8px">Training tickets</div>${tks.map(t=>`<div class="row" style="margin-bottom:6px">${ic('ticket','sm')}<span class="grow">${esc(tSess(t.sess).t.n)}</span><span class="mono small">${t.code}</span></div>`).join('')}</div>`:''}
+  <div class="note" style="width:100%;text-align:left">${ic('coin','xs')}<span>${isB?`You’ll earn <b>${o.ptsPending} points</b> when the service is completed.`:`<b>${o.ptsNow} points</b> added to your balance.`} A receipt was sent to ${esc(S.user.email)}.</span></div>
+ </div></div><div class="footer"><div class="btns"><button class="btn ghost" data-go="order" data-id="${o.id}">View receipt</button><button class="btn" data-act="${isB?'viewBk':'home'}" data-arg="${b?b.id:''}">${isB?'View booking':'Done'}</button></div></div>`};
+
+V.bookings=()=>{const seg=ui.seg.bk||'up';const all=mine();
+ const lists={up:all.filter(b=>['PENDING_PAYMENT','CONFIRMED','CHECKED_IN','IN_PROGRESS'].includes(b.status)),past:all.filter(b=>b.status==='COMPLETED'||b.status==='NO_SHOW'),cx:all.filter(b=>['CANCELLED','EXPIRED'].includes(b.status))};
+ const L=lists[seg].sort((a,b)=>seg==='up'?(a.date+a.time).localeCompare(b.date+b.time):(b.date+b.time).localeCompare(a.date+a.time));
+ const tks=S.tickets;
+ return shell('My bookings',`<div class="stack"><div class="seg">${[['up','Upcoming'],['past','Past'],['cx','Cancelled']].map(([k,l])=>`<button class="${seg===k?'on':''}" data-act="seg" data-arg="bk|${k}">${l}</button>`).join('')}</div>
+ ${L.length?L.map(b=>`<button class="card" style="text-align:left;width:100%" data-go="bkd" data-id="${b.id}"><div class="row"><div class="grow"><div class="lbl">${fDate(b.date)} · ${fTime(b.time)}</div><div class="h3" style="margin-top:4px">${esc(svc(b.items[0]).n)}${b.items.length>1?` +${b.items.length-1} more`:''}</div><div class="small muted" style="margin-top:2px">${esc(vName(veh(b.veh)))} · ${b.no}</div></div>${stPill(b.status)}</div>${b.status==='COMPLETED'&&!b.rated?`<div class="row" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line)"><span class="grow small" style="font-weight:600">How was your service?</span><span class="link">Rate now →</span></div>`:''}</button>`).join(''):empty('cal','No bookings here','Book a service for your car in a few taps.',`<button class="btn sm" data-act="startBook">Book a service</button>`)}
+ ${seg==='up'&&tks.length?`<div class="sec"><span class="h3">Training tickets</span></div>${tks.map(t=>{const {t:tr,x}=tSess(t.sess);return `<div class="card row"><div class="ico or">${ic('ticket')}</div><div class="grow"><div style="font-weight:700">${esc(tr.n)}</div><div class="small muted">${fDate(x.date)} · ${x.t} · ${x.mode}</div></div><button class="ibtn" data-act="showTicket" data-arg="${t.id}" aria-label="Show ticket QR">${ic('qr')}</button></div>`}).join('')}`:''}
+ </div>`)};
+
+V.bkd=c=>{const b=S.bookings.find(x=>x.id===c.id);const v=veh(b.veh);const o=S.orders.find(x=>x.id===b.order);
+ const canChange=['CONFIRMED'].includes(b.status)&&(new Date(b.date+'T'+b.time)-Date.now())>24*3600e3;
+ const flow=['CONFIRMED','CHECKED_IN','IN_PROGRESS','COMPLETED'];const idx=flow.indexOf(b.status);
+ return shell('Booking',`<div class="stack">
+  <div class="card" style="text-align:center"><div class="row"><span class="mono grow" style="text-align:left;font-weight:700">${b.no}</span>${stPill(b.status)}</div>
+   ${['CONFIRMED','CHECKED_IN'].includes(b.status)?`<div style="margin:14px 0 4px"><div class="qr">${qrSvg(b.no,150)}</div><div class="small muted" style="margin-top:6px">Show at the counter to check in</div></div>`:''}</div>
+  ${idx>=0?`<div class="card"><div class="lbl" style="margin-bottom:10px">Progress</div>${flow.map((s,i)=>`<div class="row" style="margin-bottom:${i<3?10:0}px"><span style="width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:${i<=idx?'var(--good)':'var(--soft)'};color:${i<=idx?'#fff':'var(--muted)'}">${i<=idx?ic('check','xs'):''}</span><span class="grow" style="font-weight:${i===idx?700:500};color:${i<=idx?'var(--ink)':'var(--muted)'}">${STL[s][0]}</span></div>`).join('')}</div>`:''}
+  <div class="card"><div class="kv"><span>Date</span><span>${fDate(b.date)}</span></div><div class="kv"><span>Time</span><span>${fTime(b.time)}</span></div><div class="kv"><span>Car</span><span>${esc(vName(v))} · ${esc(v.plate)}</span></div><div class="kv"><span>Location</span><span>SIB Service Centre</span></div></div>
+  <div class="card">${b.items.map(id=>`<div class="kv"><span>${esc(svc(id).n)}</span><span>${o?'':RM(priceOf(svc(id)))}</span></div>`).join('')}${o?`<div class="kv total"><span>Paid</span><span>${RM(o.total)}</span></div>`:''}</div>
+  ${b.status==='COMPLETED'&&!b.rated?`<button class="btn or" data-go="rate" data-id="${b.id}">${ic('star','sm')} Rate this service</button>`:''}
+  ${b.status==='COMPLETED'&&b.rated?`<div class="card row"><span class="grow small muted">Your rating</span>${starRow(b.rated)}</div>`:''}
+  ${b.status==='COMPLETED'?`<button class="btn ghost" data-act="bookAgain" data-arg="${b.id}">Book again</button>`:''}
+  ${b.status==='CONFIRMED'?`<div class="btns"><button class="btn ghost" data-act="${canChange?'resched':'tooLate'}" data-arg="${b.id}">Reschedule</button><button class="btn danger" data-act="${canChange?'cancelBk':'tooLate'}" data-arg="${b.id}">Cancel</button></div>${canChange?'':note('Changes are allowed up to 24 hours before your slot. Chat with us on WhatsApp for help.')}`:''}
+ </div>`,{backBtn:true,wa:'booking '+b.no})};
+
+V.rate=c=>{const b=S.bookings.find(x=>x.id===c.id);const r=ui.rate;
+ return shell('Rate service',`<div class="stack" style="text-align:center"><div class="muted small">${b.no} · ${fDate(b.date)}</div><div class="h2">${esc(b.items.map(i=>svc(i).n).join(' + '))}</div>
+  <div class="row" style="justify-content:center;gap:6px;margin:8px 0">${[1,2,3,4,5].map(i=>`<button data-act="setRate" data-arg="${i}" aria-label="${i} star${i>1?'s':''}"><svg viewBox="0 0 24 24" width="42" height="42" style="fill:${i<=r?'#F2A31B':'var(--line)'}">${P.star}</svg></button>`).join('')}</div>
+  <div style="font-weight:700">${['','Very poor','Poor','Okay','Good','Excellent'][r]}</div>
+  <div class="field" style="text-align:left"><label for="rt-c">Comment (optional)</label><textarea class="inp" id="rt-c" maxlength="500" data-f="rc" placeholder="What went well? What could be better?">${esc(ui.form.rc??'')}</textarea><span class="hint">Max 500 characters. Shown publicly on the service page.</span></div>
+ </div>`,{backBtn:true,wa:false,foot:`<button class="btn or" data-act="submitRate" data-arg="${b.id}">Submit rating</button>`})};
+
+V.notifs=()=>shell('Notifications',S.notifs.c.length?`<div class="stack"><div class="row"><span class="grow small muted">${unread('c')} unread</span><button class="link" data-act="readAll">Mark all as read</button></div><div class="list">${S.notifs.c.map(n=>`<button class="li" data-act="openNotif" data-arg="${n.id}" style="${n.read?'':'background:#F6F5FD'}"><div class="ico ${n.read?'':'or'}">${ic('bell','sm')}</div><div class="grow"><div class="t">${esc(n.t)}</div><div class="s">${esc(n.b)}</div><div class="s" style="font-size:11px">${n.d}</div></div>${n.read?'':'<span style="width:8px;height:8px;border-radius:50%;background:var(--orange)"></span>'}</button>`).join('')}</div></div>`:empty('bell','No notifications','Booking updates and offers appear here.'),{backBtn:true});
+
+V.history=()=>{const seg=ui.seg.h||'service';const L=S.orders.filter(o=>o.kind===seg);
+ return shell('Purchase history',`<div class="stack"><div class="seg">${[['service','Services'],['training','Training'],['membership','Membership']].map(([k,l])=>`<button class="${seg===k?'on':''}" data-act="seg" data-arg="h|${k}">${l}</button>`).join('')}</div>
+ ${L.length?`<div class="list">${L.map(o=>`<button class="li" data-go="order" data-id="${o.id}"><div class="grow"><div class="t">${esc(o.items.map(i=>i.n).join(', '))}</div><div class="s">${o.no} · ${fShort(o.date)}</div></div><div style="text-align:right"><div class="price">${RM(o.total)}</div><span class="pill ${o.status==='paid'?'st-good':o.status==='refunded'?'st-mute':o.status==='pending'?'st-warn':'st-bad'}">${{paid:'Paid',pending:'Pending',failed:'Failed',refunded:'Refunded',cancelled:'Cancelled'}[o.status]}</span></div></button>`).join('')}</div>`:empty('history','Nothing here yet','Your paid '+(seg==='service'?'services':seg)+' will appear here.')}</div>`,{backBtn:true})};
+
+V.order=c=>{const o=S.orders.find(x=>x.id===c.id);const b=o.booking?S.bookings.find(x=>x.id===o.booking):S.bookings.find(x=>x.order===o.id);
+ return shell('Receipt',`<div class="stack"><div class="card"><div class="row" style="margin-bottom:12px"><img src="${LOGO}" alt="SIB" style="height:24px"><span class="grow"></span><span class="pill ${o.status==='paid'?'st-good':'st-warn'}">${o.status==='paid'?'Paid':o.status}</span></div>
+  <div class="kv"><span>Order no.</span><span class="mono">${o.no}</span></div><div class="kv"><span>Date</span><span>${fDate(o.date)}</span></div><div class="kv"><span>Payment</span><span>${esc(o.method||'—')}</span></div><div class="kv"><span>Gateway ref.</span><span class="mono">${o.ref||'—'}</span></div>
+  <div style="border-top:1px solid var(--line);margin:10px 0"></div>${o.items.map(i=>`<div class="kv"><span>${esc(i.n)}</span><span>${RM(i.p)}</span></div>`).join('')}${o.save?`<div class="kv"><span>Member savings</span><span style="color:var(--good)">included</span></div>`:''}<div class="kv total"><span>Total</span><span>${RM(o.total)}</span></div></div>
+  ${b?`<button class="card row" style="width:100%;text-align:left" data-go="bkd" data-id="${b.id}"><div class="ico">${ic('cal')}</div><div class="grow"><div style="font-weight:700">Booking ${b.no}</div><div class="small muted">${fDate(b.date)} · ${fTime(b.time)}</div></div>${stPill(b.status)}</button>`:''}
+  <div class="btns"><button class="btn ghost" data-act="toast" data-arg="Receipt PDF sent to ${esc(S.user.email)}">${ic('file','sm')} Email PDF</button>${b&&o.kind==='service'?`<button class="btn" data-act="bookAgain" data-arg="${b.id}">Book again</button>`:''}</div></div>`,{backBtn:true})};
+
+V.membership=()=>{const sub=S.sub;
+ if(sub&&sub.status==='active'){const pl=PLANS.find(p=>p.id===sub.plan);return shell('Membership',`<div class="stack">
+  <div class="mcard ${pl.id==='gold'?'gold':''}"><div class="row" style="position:relative"><img src="${LOGO_W}" alt="SIB" style="height:22px"><span class="grow"></span><span class="lbl" style="color:rgba(255,255,255,.8)">${esc(pl.n)}</span></div>
+   <div style="position:relative"><div class="mono" style="font-size:17px;letter-spacing:.12em">${sub.no}</div><div class="row" style="margin-top:8px"><div class="grow"><div style="font-weight:700">${esc(S.user.name)}</div><div class="small" style="opacity:.75">Valid until ${fDate(sub.end)}</div></div><div style="background:#fff;padding:4px;border-radius:8px">${qrSvg(sub.no,58)}</div></div></div></div>
+  <div class="card"><div class="lbl" style="margin-bottom:8px">Your benefits</div>${pl.ben.map(b=>`<div class="row" style="margin-bottom:8px">${ic('check','sm')}<span>${b}</span></div>`).join('')}</div>
+  <div class="card"><div class="kv"><span>Status</span><span style="color:var(--good)">Active</span></div><div class="kv"><span>Started</span><span>${fDate(sub.start)}</span></div><div class="kv"><span>Renews</span><span>Manual · reminder 7 days before</span></div></div>
+  <button class="btn ghost" data-act="renew">Renew early (extends from ${fShort(sub.end)})</button>
+  ${note('Demo: use the presenter panel to expire this membership and see member prices disappear.')}
+ </div>`,{backBtn:true})}
+ return shell('Membership',`<div class="stack"><div class="h2">Pay less every service</div><p class="muted" style="margin:0">Subscribe in the app and get member prices, extra points and perks.</p>
+  ${PLANS.map(pl=>`<div class="card" style="${pl.id==='gold'?'border:2px solid var(--orange)':''}"><div class="row"><div class="ico ${pl.id==='gold'?'or':''}">${ic('crown')}</div><div class="grow"><div class="h3">${esc(pl.n)}</div><div class="small muted">${pl.disc}</div></div>${pl.id==='gold'?'<span class="pill st-or">Best value</span>':''}</div>
+   <div style="margin:12px 0"><span style="font-family:var(--f-display);font-size:26px;font-weight:700">${RM(pl.p)}</span><span class="muted"> / ${pl.per}</span></div>
+   ${pl.ben.map(b=>`<div class="row small" style="margin-bottom:6px">${ic('check','xs')}<span>${b}</span></div>`).join('')}
+   <button class="btn ${pl.id==='gold'?'or':''}" style="margin-top:10px" data-act="subscribe" data-arg="${pl.id}">Subscribe · ${RM(pl.p)}</button></div>`).join('')}
+  ${note('Plan names, prices and benefits are placeholders until SIB confirms them. See <button class="link" data-go="legal" data-id="member">Membership Terms</button>.')}</div>`,{backBtn:true})};
+
+V.points=()=>{const L=[...S.ledger].reverse();const exp=S.ledger.filter(x=>x.v>0&&(dOf(x.d)<addD(-300))).reduce((a,b)=>a+b.v,0);
+ return shell('My points',`<div class="stack"><div class="hero"><div class="k">Points balance</div><div style="font-family:var(--f-display);font-size:40px;font-weight:800;line-height:1.1" class="num">${points().toLocaleString()}</div><div class="small" style="opacity:.8">Earn 1 point per RM 1 paid in the app${isMember()?` · ${PLANS.find(p=>p.id===S.sub.plan).mult}× as a member`:''}</div></div>
+  ${exp?`<div class="timer">${ic('clock','sm')} ${exp} points expire within 60 days</div>`:''}
+  <div class="sec"><span class="h3">History</span></div>
+  <div class="list">${L.map(x=>`<div class="li"><div class="ico ${x.v>0?'':'or'}">${ic(x.v>0?'plus':'minus','sm')}</div><div class="grow"><div class="t">${esc(x.t)}</div><div class="s">${fDate(x.d)}</div></div><b class="num" style="color:${x.v>0?'var(--good)':'var(--bad)'}">${x.v>0?'+':''}${x.v}</b></div>`).join('')}</div>
+  ${note('Service points are credited when the service is completed. Points expire 12 months after they are earned. Redeeming points is not in the current scope.')}</div>`,{backBtn:true})};
+
+V.referral=()=>shell('Refer a friend',`<div class="stack"><div class="hero" style="text-align:center"><div class="k">Your referral code</div><div class="mono" style="font-size:30px;font-weight:700;letter-spacing:.12em;margin:8px 0;position:relative">${S.user.code}</div>
+  <div class="btns" style="position:relative;z-index:1"><button class="btn sm" style="background:rgba(255,255,255,.15)" data-act="copyCode">${ic('copy','sm')} Copy</button><button class="btn or sm" data-act="shareCode">${ic('share','sm')} Share</button></div></div>
+  <div class="card"><div class="lbl" style="margin-bottom:10px">How it works</div>
+   ${[['share','Share your code','Send it to friends who drive an EV, PHEV or hybrid.'],['user','Friend signs up','They enter your code and get 50 welcome points.'],['gift','You get rewarded','You get 100 points when they finish their first paid booking.']].map(([i,t,s])=>`<div class="row" style="margin-bottom:12px;align-items:flex-start"><div class="ico" style="width:34px;height:34px">${ic(i,'sm')}</div><div><div style="font-weight:700">${t}</div><div class="small muted">${s}</div></div></div>`).join('')}</div>
+  <div class="sec"><span class="h3">Friends invited</span><span class="small muted">${S.friends.length}</span></div>
+  <div class="list">${S.friends.map(f=>`<div class="li"><div class="ico">${ic('user','sm')}</div><div class="grow"><div class="t">${esc(f.n)}</div><div class="s">${f.s}</div></div>${f.pts?`<b style="color:var(--good)">+${f.pts}</b>`:'<span class="pill st-warn">Pending</span>'}</div>`).join('')}</div>
+  ${note('Reward amounts are placeholders. Self-referral is blocked, and accounts sharing a device or phone are flagged.')}</div>`,{backBtn:true});
+
+V.learn=()=>{const seg=ui.seg.learn||'train';
+ return shell('Training & events',`<div class="stack"><div class="seg">${[['train','Training'],['events','Upcoming events']].map(([k,l])=>`<button class="${seg===k?'on':''}" data-act="seg" data-arg="learn|${k}">${l}</button>`).join('')}</div>
+ ${seg==='train'?S.train.map(t=>{const nx=t.sess[0];const from=Math.min(...t.sess.map(x=>isMember()?x.m:x.p));return `<button class="card" style="text-align:left;width:100%" data-go="training" data-id="${t.id}"><div class="row" style="align-items:flex-start"><div class="ico or">${ic('learn')}</div><div class="grow"><span class="pill st-mute">${t.cat}</span><div class="h3" style="margin:6px 0 4px">${esc(t.n)}</div><div class="small muted">Next: ${fDate(nx.date)} · ${nx.mode}</div></div></div><div class="row" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line)"><span class="grow small muted">${t.sess.length} session${t.sess.length>1?'s':''}</span><span class="small">from <b class="price">${RM(from)}</b></span></div></button>`}).join('')
+ :S.events.filter(e=>e.pub&&dOf(e.date)>=T0).map(e=>`<button class="card row" style="text-align:left;width:100%;align-items:flex-start" data-go="event" data-id="${e.id}"><div style="width:52px;flex:none;text-align:center;border-radius:12px;background:var(--orange-soft);padding:6px 0"><div class="lbl" style="color:var(--orange)">${dOf(e.date).toLocaleDateString('en-MY',{month:'short'})}</div><div style="font-family:var(--f-display);font-size:22px;font-weight:700;color:var(--ink)">${dOf(e.date).getDate()}</div></div><div class="grow"><div class="h3">${esc(e.n)}</div><div class="small muted" style="margin-top:3px">${e.t}</div><div class="small muted row" style="gap:4px;margin-top:2px">${ic('pin','xs')} ${esc(e.v)}</div></div>${S.rsvp[e.id]?'<span class="pill st-good">Going</span>':''}</button>`).join('')}
+ </div>`)};
+
+V.training=c=>{const t=S.train.find(x=>x.id===c.id);const sel=ui.form.tsess||t.sess.find(x=>x.seats>x.taken)?.id;const qty=ui.form.tqty||1;const x=t.sess.find(s=>s.id===sel);const left=x?x.seats-x.taken:0;
+ return shell('',`<div style="background:linear-gradient(135deg,var(--navy),var(--navy-ink));color:#fff;padding:22px 16px"><span class="pill" style="background:rgba(255,255,255,.15);color:#fff">${t.cat}</span><div class="h2" style="font-size:23px;margin-top:10px">${esc(t.n)}</div><p style="opacity:.8;margin:6px 0 0;line-height:1.5">${esc(t.d)}</p></div>
+ <div class="stack" style="padding:16px"><div class="card"><div class="lbl" style="margin-bottom:8px">What you’ll learn</div>${t.learn.map(l=>`<div class="row small" style="margin-bottom:6px">${ic('check','xs')}<span>${l}</span></div>`).join('')}</div>
+  <div class="sec" style="margin:4px 0 0"><span class="h3">Choose a session</span></div>
+  ${t.sess.map(s=>{const l=s.seats-s.taken;return `<button class="radio ${sel===s.id?'on':''}" data-act="tsess" data-arg="${s.id}" ${l<=0?'disabled style="opacity:.45"':''}><span class="dot"></span><div class="grow"><div style="font-weight:700">${fDate(s.date)}</div><div class="small muted">${s.t} · ${s.mode}</div><div class="small" style="color:${l<=3?'var(--warn)':'var(--good)'};font-weight:700">${l<=0?'Fully booked':l+' seats left'}</div></div><div style="text-align:right"><div class="price">${RM(isMember()?s.m:s.p)}</div>${isMember()?`<div class="strike">${RM(s.p)}</div>`:`<div class="small muted">Member ${RM(s.m)}</div>`}</div></button>`}).join('')}
+  ${x?`<div class="card row"><span class="grow" style="font-weight:700">Number of participants</span><div class="stepper"><button data-act="tqty" data-arg="-1" aria-label="Fewer">−</button><b>${qty}</b><button data-act="tqty" data-arg="1" aria-label="More">+</button></div></div><div class="small muted">Max ${left} for this session. Each person gets a QR ticket for attendance.</div>`:''}
+ </div>`,{backBtn:true,nopad:true,wa:'the '+t.n+' training',foot:x?`<div class="btns"><button class="btn ghost" data-act="addTrn">${ic('cart','sm')} Add to cart</button><button class="btn or" data-act="buyTrn">Buy · ${RM((isMember()?x.m:x.p)*qty)}</button></div>`:''})};
+
+V.event=c=>{const e=S.events.find(x=>x.id===c.id);const going=S.rsvp[e.id];
+ return shell('Event',`<div class="stack"><div style="border-radius:20px;padding:18px;background:var(--orange);color:#fff"><div class="lbl" style="color:rgba(255,255,255,.85)">${fDate(e.date)}</div><div class="h2" style="font-size:24px;margin-top:6px">${esc(e.n)}</div></div>
+  <div class="card"><div class="row" style="margin-bottom:10px">${ic('clock','sm')}<span>${e.t}</span></div><div class="row">${ic('pin','sm')}<span class="grow">${esc(e.v)}</span><a class="link" href="https://maps.google.com/?q=${encodeURIComponent('SIB Service Centre')}" target="_blank" rel="noopener">Map</a></div></div>
+  <p style="margin:0;line-height:1.55">${esc(e.d)}</p>
+  ${going?`<div class="note" style="background:var(--good-soft);color:var(--good)">${ic('check','xs')}<span><b>You’re registered.</b> We’ll remind you the day before.</span></div>`:''}
+ </div>`,{backBtn:true,foot:`<div class="btns"><button class="btn ghost" data-act="toast" data-arg="Added to your phone calendar">${ic('cal','sm')} Add to calendar</button><button class="btn ${going?'ghost':'or'}" data-act="rsvp" data-arg="${e.id}">${going?'Cancel registration':'Register (free)'}</button></div>`})};
+
+V.legal=c=>{const L=LEGAL[c.id];return shell(L[0],`<div class="legal"><div class="small muted" style="margin-bottom:10px">Version ${S.termsVer} · Updated ${fShort(iso(addD(-20)))}</div>${L[1]}</div>`,{backBtn:true,wa:false})};
+V.legals=()=>shell('Terms & Policy',`<div class="list">${Object.entries(LEGAL).map(([k,[t]])=>`<button class="li" data-go="legal" data-id="${k}"><div class="ico">${ic('file','sm')}</div><div class="grow t">${t}</div>${ic('right','sm')}</button>`).join('')}</div><div style="margin-top:12px">${note('Pages are edited by SIB HQ in the admin portal. When the Terms version changes, users are asked to accept again on next login.')}</div>`,{backBtn:true});
+
+V.profile=()=>shell('Profile',`<div class="stack">
+ <div class="card row"><div class="ico or" style="width:52px;height:52px;border-radius:50%;font-family:var(--f-display);font-weight:800;font-size:18px">${S.user.name.split(' ').map(x=>x[0]).slice(0,2).join('')}</div><div class="grow"><div class="h3">${esc(S.user.name)}</div><div class="small muted">${esc(S.user.email)}</div><div class="small muted">${esc(S.user.phone)} · IC <span class="mono">${maskIC(S.user.ic)}</span></div></div></div>
+ <div class="stats"><button class="stat" style="text-align:left" data-go="points"><div class="lbl">Points</div><div class="v">${points().toLocaleString()}</div></button><button class="stat" style="text-align:left" data-go="membership"><div class="lbl">Membership</div><div class="v" style="font-size:18px;margin-top:6px">${isMember()?esc(PLANS.find(p=>p.id===S.sub.plan).n):'Not a member'}</div></button></div>
+ <div class="list">${[['car','My Garage','garage',S.vehicles.length+' cars'],['crown','Membership','membership',''],['coin','My points','points',''],['gift','Refer a friend','referral',S.user.code],['history','Purchase history','history',''],['bell','Notification settings','@notifSet',''],['file','Terms & Policy','legals','']].map(([i,t,g,s])=>`<button class="li" ${g[0]==='@'?`data-act="${g.slice(1)}"`:`data-go="${g}"`}><div class="ico">${ic(i,'sm')}</div><div class="grow t">${t}</div>${s?`<span class="small muted">${s}</span>`:''}${ic('right','sm')}</button>`).join('')}</div>
+ <div class="list"><button class="li" data-act="logout"><div class="ico">${ic('out','sm')}</div><div class="grow t">Log out</div></button><button class="li" data-act="delAcc"><div class="ico" style="color:var(--bad);background:var(--bad-soft)">${ic('trash','sm')}</div><div class="grow t" style="color:var(--bad)">Delete account</div></button></div>
+ <div class="small muted" style="text-align:center">SIB app · proof of concept v0.1 · sample data</div></div>`);
+
+/* ---------- admin views ---------- */
+const aB=()=>S.bookings.filter(b=>b.status!=='EXPIRED'&&b.status!=='PENDING_PAYMENT');
+const bVeh=b=>b.who==='me'?vName(veh(b.veh)):vName({vmodel:b.vmodel});
+const bPlate=b=>b.who==='me'?veh(b.veh).plate:b.plate;
+V.adash=()=>{const td=aB().filter(b=>b.date===TODAY);const rev=S.orders.filter(o=>o.status==='paid'&&o.date===TODAY).reduce((a,o)=>a+o.total,0)+186500;
+ const allR=S.svc.flatMap(s=>s.ratings.filter(r=>!r.hidden));const ar=allR.reduce((a,b)=>a+b.stars,0)/allR.length;
+ return shell('Today',`<div class="stack"><div><div class="lbl">${fDate(TODAY)}</div><div class="h2" style="margin-top:2px">Service centre overview</div></div>
+ <div class="stats"><div class="stat"><div class="lbl">Bookings today</div><div class="v">${td.length}</div><div class="d">${td.filter(b=>b.status==='COMPLETED').length} completed</div></div><div class="stat"><div class="lbl">Revenue today</div><div class="v" style="font-size:20px;margin-top:6px">${RM(rev)}</div><div class="d">+12% vs last Tue</div></div><div class="stat"><div class="lbl">New customers</div><div class="v">7</div><div class="d">3 via referral</div></div><div class="stat"><div class="lbl">Avg. rating</div><div class="v">${ar.toFixed(1)}★</div><div class="d" style="color:var(--muted)">${allR.length} reviews</div></div></div>
+ <div class="sec"><span class="h3">Today by slot</span><button class="link" data-act="scan">${ic('scan','xs')} Scan QR</button></div>
+ ${td.length?HOURS.filter(h=>td.some(b=>b.time===h)).map(h=>`<div class="tl"><div class="tm">${h}</div><div class="bx">${td.filter(b=>b.time===h).map(b=>`<button class="card" style="text-align:left;padding:11px" data-go="abd" data-id="${b.id}"><div class="row"><div class="grow"><div style="font-weight:700">${esc(b.name)}</div><div class="small muted">${esc(bVeh(b))} · ${esc(bPlate(b))}</div></div>${stPill(b.status)}</div></button>`).join('')}</div></div>`).join(''):empty('cal','No bookings today','New bookings appear here instantly.')}
+ </div>`,{wa:false})};
+V.abook=()=>{const sel=ui.form.adate||TODAY;const days=[];for(let i=-1;i<14;i++)days.push(addD(i));const L=aB().filter(b=>b.date===sel).sort((a,b)=>a.time.localeCompare(b.time));
+ return shell('Bookings',`<div class="stack"><div class="days">${days.map(x=>{const s=iso(x);const n=aB().filter(b=>b.date===s).length;return `<button class="day ${sel===s?'on':''}" data-act="adate" data-arg="${s}"><span class="dw">${x.toLocaleDateString('en-MY',{weekday:'short'})}</span><span class="dn">${x.getDate()}</span><span class="dm">${n?n+' bkg':'—'}</span></button>`}).join('')}</div>
+ <div class="row"><span class="h3 grow">${fDate(sel)}</span><button class="link" data-act="toast" data-arg="Bookings exported to CSV (demo)">Export CSV</button></div>
+ ${L.length?`<div class="list">${L.map(b=>`<button class="li" data-go="abd" data-id="${b.id}"><span class="mono" style="font-weight:700;color:var(--navy);width:44px">${b.time}</span><div class="grow"><div class="t">${esc(b.name)}${b.who==='me'?' <span class="pill st-or">App demo</span>':''}</div><div class="s">${esc(svc(b.items[0]).n)} · ${esc(bPlate(b))}</div></div>${stPill(b.status)}</button>`).join('')}</div>`:empty('cal','No bookings on this day','')}
+ <div class="card"><div class="lbl" style="margin-bottom:8px">Slot capacity this day</div><div class="slots">${HOURS.map(h=>{const si=slotInfo(sel,h);return `<div class="slot ${si.left===0?'full':''}"><b>${h}</b><span>${si.past?'Passed':(S.cap-si.left)+'/'+S.cap+' booked'}</span></div>`}).join('')}</div></div></div>`,{wa:false})};
+V.abd=c=>{const b=S.bookings.find(x=>x.id===c.id);const rev=ui.reveal===b.id;const ic_=b.who==='me'?b.form?.bic||S.user.ic:b.ic;
+ const nxt={CONFIRMED:['CHECKED_IN','Check in'],CHECKED_IN:['IN_PROGRESS','Start service'],IN_PROGRESS:['COMPLETED','Mark completed']}[b.status];
+ return shell('Booking',`<div class="stack"><div class="card"><div class="row"><span class="mono grow" style="font-weight:700">${b.no}</span>${stPill(b.status)}</div>
+  <div class="kv" style="margin-top:8px"><span>Customer</span><span>${esc(b.name)}</span></div><div class="kv"><span>IC</span><span><span class="mono">${rev?esc(ic_):maskIC(ic_)}</span> ${rev?'':`<button class="link" data-act="reveal" data-arg="${b.id}">${ic('eye','xs')} Reveal</button>`}</span></div><div class="kv"><span>Car</span><span>${esc(bVeh(b))} · ${esc(bPlate(b))}</span></div><div class="kv"><span>Slot</span><span>${fDate(b.date)} · ${b.time}</span></div>
+  <div style="border-top:1px solid var(--line);margin:8px 0"></div>${b.items.map(i=>`<div class="kv"><span>${esc(svc(i).n)}</span><span>${svc(i).dur} min</span></div>`).join('')}</div>
+  ${rev?note('IC revealed. This action is recorded in the audit log.'):''}
+  ${nxt?`<button class="btn ${nxt[0]==='COMPLETED'?'or':''}" data-act="aStatus" data-arg="${b.id}|${nxt[0]}">${nxt[1]}</button>`:''}
+  ${b.status==='CONFIRMED'?`<div class="btns"><button class="btn ghost" data-act="aStatus" data-arg="${b.id}|NO_SHOW">Mark no-show</button><button class="btn danger" data-act="aStatus" data-arg="${b.id}|CANCELLED">Cancel</button></div>`:''}
+  ${b.status==='COMPLETED'&&b.who==='me'?note('Points credited and a rating request was sent to the customer’s app.'):''}
+ </div>`,{backBtn:true,wa:false})};
+V.amanage=()=>shell('Manage',`<div class="stack"><p class="muted small" style="margin:0">Quick controls in the app. Full management runs in the HQ web portal.</p><div class="list">${[['wrench','Services & prices','asvc',S.svc.filter(s=>s.active).length+' active'],['clock','Slot settings','aslots',S.cap+' cars / slot'],['car','Car brands & models','abrands',MODELS.length+' models'],['learn','Training sessions','atrain',S.train.length+' courses'],['cal','Events','aevents',S.events.filter(e=>e.pub).length+' live'],['crown','Membership plans','aplans',PLANS.length+' plans'],['star','Ratings & reviews','aratings',''],['mega','Send broadcast','acast',''],['settings','Settings','aset',''],['file','Audit log','aaudit','']].map(([i,t,g,s])=>`<button class="li" data-go="${g}"><div class="ico">${ic(i,'sm')}</div><div class="grow t">${t}</div><span class="small muted">${s}</span>${ic('right','sm')}</button>`).join('')}</div></div>`,{wa:false});
+V.asvc=()=>shell('Services & prices',`<div class="stack">${S.svc.map(s=>`<div class="card"><div class="row"><div class="grow"><div style="font-weight:700">${esc(s.n)}</div><div class="small muted">${s.pt.map(p=>PTL[p]).join(' · ')} · ${s.dur} min</div></div><button class="toggle ${s.active?'on':''}" data-act="svcToggle" data-arg="${s.id}" aria-label="Show in app"></button></div>
+ <div class="row" style="margin-top:10px"><div class="grow small">Price <b class="num">${RM(s.p)}</b> · Member <b class="num">${RM(s.m)}</b></div><div class="stepper"><button data-act="svcPrice" data-arg="${s.id}|-1000" aria-label="Lower price">−</button><b style="font-size:11px;min-width:40px">RM10</b><button data-act="svcPrice" data-arg="${s.id}|1000" aria-label="Raise price">+</button></div></div></div>`).join('')}${note('Turning a service off hides it in the app immediately. Old orders keep the service name and price.')}</div>`,{backBtn:true,wa:false});
+V.aslots=()=>shell('Slot settings',`<div class="stack"><div class="card row"><div class="grow"><div style="font-weight:700">Cars per time slot</div><div class="small muted">Capacity of the service centre per hour</div></div><div class="stepper"><button data-act="cap" data-arg="-1" aria-label="Fewer">−</button><b>${S.cap}</b><button data-act="cap" data-arg="1" aria-label="More">+</button></div></div>
+ <div class="card row"><div class="grow"><div style="font-weight:700">Hold time while paying</div><div class="small muted">Slot is released if unpaid</div></div><b>${S.holdMin} min</b></div>
+ <div class="card"><div style="font-weight:700;margin-bottom:8px">Operating hours</div>${['Mon – Fri','Saturday'].map(d=>`<div class="kv"><span>${d}</span><span>09:00 – 18:00 · lunch 13:00</span></div>`).join('')}<div class="kv"><span>Sunday</span><span><button class="toggle ${S.sunClosed?'':'on'}" data-act="sun" aria-label="Open on Sunday" style="vertical-align:middle"></button> ${S.sunClosed?'Closed':'Open'}</span></div></div>
+ <div class="card"><div style="font-weight:700;margin-bottom:8px">Blocked dates</div><div class="kv"><span>${fDate(iso(addD(22)))}</span><span>Public holiday</span></div><button class="link" data-act="toast" data-arg="Date picker opens in the web portal">+ Add blocked date</button></div>
+ ${note('Single service centre: every slot shares one capacity. Changes apply to the customer app immediately.')}</div>`,{backBtn:true,wa:false});
+V.abrands=()=>shell('Brands & models',`<div class="list">${BRANDS.map(b=>{const ms=MODELS.filter(m=>m.b===b.id);return `<div class="li"><span class="mono-logo" style="width:38px;height:38px;font-size:12px">${esc(b.name.slice(0,2).toUpperCase())}</span><div class="grow"><div class="t">${esc(b.name)}</div><div class="s">${ms.map(m=>m.name).join(', ')}</div></div><div class="row" style="gap:4px">${[...new Set(ms.map(m=>m.pt))].map(p=>ptPill(p)).join('')}</div></div>`}).join('')}</div><button class="btn ghost" style="margin-top:12px" data-act="toast" data-arg="Brand form opens in the web portal">${ic('plus','sm')} Add brand or model</button>`,{backBtn:true,wa:false});
+V.atrain=()=>shell('Training sessions',`<div class="stack">${S.train.map(t=>`<div class="card"><div style="font-weight:700">${esc(t.n)}</div>${t.sess.map(s=>`<div class="row" style="margin-top:10px"><div class="grow small">${fShort(s.date)} · ${s.mode}</div><div style="width:90px;height:6px;border-radius:3px;background:var(--soft);overflow:hidden"><div style="height:100%;width:${s.taken/s.seats*100}%;background:${s.taken/s.seats>.8?'var(--orange)':'var(--navy)'}"></div></div><b class="small num" style="width:48px;text-align:right">${s.taken}/${s.seats}</b></div>`).join('')}</div>`).join('')}<button class="btn ghost" data-act="scan">${ic('scan','sm')} Scan ticket for attendance</button></div>`,{backBtn:true,wa:false});
+V.aevents=()=>shell('Events',`<div class="stack">${S.events.map(e=>`<div class="card row"><div class="grow"><div style="font-weight:700">${esc(e.n)}</div><div class="small muted">${fDate(e.date)} · ${Object.keys(S.rsvp).includes(e.id)?'1 RSVP from app demo · ':''}${12+e.day} RSVPs</div></div><button class="toggle ${e.pub?'on':''}" data-act="evPub" data-arg="${e.id}" aria-label="Published"></button></div>`).join('')}${note('Turning an event on publishes it in the app and can send a broadcast to customers.')}</div>`,{backBtn:true,wa:false});
+V.aplans=()=>shell('Membership plans',`<div class="stack">${PLANS.map(p=>`<div class="card"><div class="row"><div class="grow h3">${esc(p.n)}</div><b>${RM(p.p)} / ${p.per}</b></div><div class="small muted" style="margin-top:4px">${p.mult}× points · ${p.disc}</div><div class="kv" style="margin-top:6px"><span>Active subscribers</span><span>${p.id==='gold'?38:112}${S.sub&&S.sub.plan===p.id&&S.sub.status==='active'?' +1 demo':''}</span></div></div>`).join('')}</div>`,{backBtn:true,wa:false});
+V.aratings=()=>{const all=S.svc.flatMap(s=>s.ratings.map(r=>({...r,s})));all.sort((a,b)=>a.stars-b.stars);
+ return shell('Ratings & reviews',`<div class="stack">${all.map(r=>`<div class="card" style="${r.hidden?'opacity:.55':''}"><div class="row"><div class="grow"><div style="font-weight:700">${esc(r.who)}</div><div class="small muted">${esc(r.s.n)}</div></div>${starRow(r.stars)}</div><div class="small" style="margin:8px 0">${esc(r.c)}</div>${r.reply?`<div class="note"><b style="color:var(--navy)">SIB reply:</b> ${esc(r.reply)}</div>`:''}
+  <div class="row" style="margin-top:8px;gap:14px"><button class="link" data-act="rHide" data-arg="${r.s.id}|${r.id}">${r.hidden?'Unhide':'Hide'}</button>${r.reply?'':`<button class="link" data-act="rReply" data-arg="${r.s.id}|${r.id}">Reply</button>`}${r.stars<=2?'<span class="pill st-bad">Low rating</span>':''}</div></div>`).join('')}</div>`,{backBtn:true,wa:false})};
+V.acast=()=>{const f=ui.form;return shell('Send broadcast',`<div class="stack"><div class="field"><label>Send to</label><div class="chips" style="flex-wrap:wrap">${[['all','All customers'],['mem','Members only'],['EV','EV owners'],['PHEV','PHEV owners'],['HYBRID','Hybrid owners']].map(([k,l])=>`<button class="chip ${(f.seg||'all')===k?'on':''}" data-act="castSeg" data-arg="${k}">${l}</button>`).join('')}</div></div>
+ ${fld('bc-t','Title','ct','Weekend promo: 15% off A/C service')}<div class="field"><label for="bc-b">Message</label><textarea class="inp" id="bc-b" data-f="cb2">${esc(f.cb2??'Keep cool this weekend. Book a Cabin Filter & A/C Service in the app and save 15%.')}</textarea></div>
+ <div class="card"><div class="kv"><span>Estimated reach</span><span>${{all:'2,418',mem:'150',EV:'1,204',PHEV:'386',HYBRID:'828'}[f.seg||'all']} customers</span></div><div class="kv"><span>Channel</span><span>Push + in-app inbox</span></div></div>
+ <button class="btn or" data-act="sendCast">${ic('mega','sm')} Send now</button>${note('Customers who turned off promo notifications won’t get a push but will see it in their inbox.')}</div>`,{backBtn:true,wa:false})};
+V.aset=()=>shell('Settings',`<div class="stack"><div class="card"><div class="kv"><span>WhatsApp number</span><span class="mono">${S.wa}</span></div><div class="kv"><span>Points earn rate</span><span>1 pt per RM 1</span></div><div class="kv"><span>Points expiry</span><span>12 months</span></div><div class="kv"><span>Referral reward</span><span>100 pts / 50 pts</span></div><div class="kv"><span>Cancellation window</span><span>24 hours</span></div><div class="kv"><span>Payment gateway</span><span><span class="pill st-warn">Sandbox</span></span></div><div class="kv"><span>Terms version</span><span>${S.termsVer}</span></div></div>${note('Only Super Admin can change these. Values are placeholders until SIB confirms them.')}</div>`,{backBtn:true,wa:false});
+V.aaudit=()=>shell('Audit log',`<div class="list">${S.audit.map(a=>`<div class="li"><div class="ico">${ic('file','sm')}</div><div class="grow"><div class="t">${esc(a.t)}</div><div class="s">${esc(a.who)} · ${a.d}</div></div></div>`).join('')}</div>`,{backBtn:true,wa:false});
+V.aalerts=()=>shell('Admin alerts',`<div class="stack"><div class="row"><span class="grow small muted">${unread('a')} unread</span><button class="link" data-act="readAllA">Mark all as read</button></div><div class="list">${S.notifs.a.map(n=>`<div class="li" style="${n.read?'':'background:#F6F5FD'}"><div class="ico ${n.read?'':'or'}">${ic(/rating/i.test(n.t)?'star':/cancel/i.test(n.t)?'x':'bell','sm')}</div><div class="grow"><div class="t">${esc(n.t)}</div><div class="s">${esc(n.b)}</div><div class="s" style="font-size:11px">${n.d}</div></div></div>`).join('')}</div></div>`,{wa:false});
+V.aprofile=()=>shell('Account',`<div class="stack"><div class="card row"><div class="ico">${ic('shield')}</div><div class="grow"><div class="h3">Nadia Hassan</div><div class="small muted">HQ Admin · admin@sib.demo</div></div></div>
+ <div class="list"><button class="li" data-act="toast" data-arg="Opens the HQ web portal (Laravel Filament) in the browser"><div class="ico">${ic('grid','sm')}</div><div class="grow t">Open HQ web portal</div>${ic('right','sm')}</button><button class="li" data-act="switchRole" data-arg="customer"><div class="ico">${ic('user','sm')}</div><div class="grow t">Switch to customer view (demo)</div>${ic('right','sm')}</button><button class="li" data-act="logout"><div class="ico">${ic('out','sm')}</div><div class="grow t">Log out</div></button></div></div>`,{wa:false});
+
+/* ---------- actions ---------- */
+function startBook(items,vid){
+ const v=vid||(S.cart.find(i=>i.k==='svc')?.vid)||S.defVeh;
+ const its=items||S.cart.filter(i=>i.k==='svc').map(i=>i.sid);
+ if(!its.length){S.pt=model(veh(v).model).pt;tab('services');toast('Pick a service for your '+vName(veh(v)));return}
+ S.draft={vid:v,items:its,date:null,time:null,form:{bn:S.user.name,bp:S.user.phone,be:S.user.email,bic:S.user.ic}};
+ ui.bkStep=1;ui.err={};ui.form={};go('book')}
+function addSvcToCart(sid,then){const s=svc(sid);const vid=S.defVeh;const m=model(veh(vid).model);
+ if(!s.pt.includes(m.pt)){const alt=S.vehicles.find(v=>s.pt.includes(model(v.model).pt));if(!alt){toast('This service is not available for your cars');return false}
+  return addWithVeh(sid,alt.id,then)}
+ return addWithVeh(sid,vid,then)}
+function addWithVeh(sid,vid,then){const cv=S.cart.find(i=>i.k==='svc');
+ if(cv&&cv.vid!==vid){ui.sheet=()=>`<div class="h3">Replace cart?</div><p class="muted small">Your cart has services for <b>${esc(vName(veh(cv.vid)))}</b>. One booking covers one car.</p><div class="btns"><button class="btn ghost" data-act="closeSheet">Keep cart</button><button class="btn" data-act="replaceCart" data-arg="${sid}|${vid}|${then||''}">Replace with ${esc(vName(veh(vid)))}</button></div>`;drawOverlay();return false}
+ if(S.cart.some(i=>i.k==='svc'&&i.sid===sid)){if(!then)toast('Already in your cart');return true}
+ S.cart.push({k:'svc',sid,vid});if(!then)toast('Added to cart · '+svc(sid).n);return true}
+function createOrderAndPay({kind,items,total,booking,ptsNow=0,ptsPending=0,trn=[],plan}){
+ const o={id:'o'+Date.now(),no:'SIB-ORD-'+(25200+S.orders.length),kind,items,total,status:'pending',date:TODAY,booking,ptsNow,ptsPending,trn,plan};
+ S.orders.unshift(o);ui.pay={m:'fpx',bank:'Maybank2u'};go('pay',{order:o.id});startTimer();return o}
+function mult(){return isMember()?PLANS.find(p=>p.id===S.sub.plan).mult:1}
+function startTimer(){clearInterval(S.timer);S.timer=setInterval(()=>{const el=document.getElementById('holdT');const c=cur();
+ const pend=S.bookings.filter(b=>b.status==='PENDING_PAYMENT');
+ pend.forEach(b=>{if(b.hold<=Date.now())expireHold(b)});
+ if(el){const o=S.orders.find(x=>x.id===c.order);const b=o&&o.booking&&S.bookings.find(x=>x.id===o.booking);if(b&&b.status==='PENDING_PAYMENT')el.textContent=fmtHold(b.hold-Date.now())}
+ if(!pend.length)clearInterval(S.timer)},500)}
+function expireHold(b){b.status='EXPIRED';const o=S.orders.find(x=>x.booking===b.id);if(o&&o.status==='pending')o.status='cancelled';
+ if(o)o.trn.forEach(t=>{const {x}=tSess(t.sess);x.taken-=t.qty});
+ toast('Payment time ran out. The slot was released.');const c=cur();if(c.s==='pay'||c.s==='payres'){S.stack=S.stack.filter(x=>x.s!=='pay'&&x.s!=='payres'&&x.s!=='book');go('payres',{order:o.id})}}
+function completePay(o,method){o.status='paid';o.method=method;o.ref=(method.startsWith('FPX')?'FPX':method.startsWith('Card')?'CRD':'EWL')+Date.now().toString().slice(-8);
+ if(o.booking){const b=S.bookings.find(x=>x.id===o.booking);b.status='CONFIRMED';b.hold=null;b.order=o.id;
+  S.cart=S.cart.filter(i=>i.k!=='svc');
+  push('customer','Booking confirmed',`${b.no} · ${fShort(b.date)} at ${fTime(b.time)}. Your slot is locked.`,['bkd',{id:b.id}]);
+  S.notifs.a.unshift({id:'na'+Date.now(),t:'New booking',b:`${S.user.name} · ${vName(veh(b.veh))} · ${fShort(b.date)} ${b.time}`,d:nowStamp(),read:false})}
+ o.trn.forEach(t=>{for(let i=0;i<t.qty;i++)S.tickets.push({id:'tk'+Date.now()+i+rnd(2),sess:t.sess,order:o.id,code:'TK-'+rnd(6)})});
+ if(o.trn.length)S.cart=S.cart.filter(i=>i.k!=='trn');
+ if(o.kind==='membership'){const pl=PLANS.find(p=>p.id===o.plan);if(S.sub&&S.sub.status==='active'){const e=dOf(S.sub.end);pl.per==='year'?e.setFullYear(e.getFullYear()+1):e.setMonth(e.getMonth()+1);S.sub.end=iso(e)}else{const e=new Date(T0);pl.per==='year'?e.setFullYear(e.getFullYear()+1):e.setMonth(e.getMonth()+1);S.sub={plan:pl.id,start:TODAY,end:iso(e),status:'active',no:'SIB '+String(4400+Math.floor(Math.random()*500))+' '+String(Math.floor(1000+Math.random()*8999))}}
+  push('customer','Membership active',`${pl.n} is active until ${fShort(S.sub.end)}. Member prices are on.`,['membership'])}
+ if(o.ptsNow){S.ledger.push({d:TODAY,t:o.kind==='membership'?'Membership · '+o.items[0].n:'Training purchase · '+o.no,v:o.ptsNow})}
+}
+const A={
+ back, home(){S.stack=[];S.tab='home';render(true)},
+ closeSheet(){ui.sheet=null;drawOverlay()},
+ toast:a=>toast(a),
+ auth:a=>{S.auth=a;ui.err={};render(true)},
+ legalAuth:a=>{ui.legal=a;S.auth='legal';render(true)},
+ demoLogin:a=>{S.role=a;S.stack=[];render(true);toast(a==='admin'?'Logged in as HQ Admin':'Logged in as '+S.user.name.split(' ')[0])},
+ doLogin(){const id=(ui.form.lid??'faizal.demo@example.com').toLowerCase();S.role=/admin/.test(id)?'admin':'customer';S.stack=[];render(true);toast(S.role==='admin'?'Admin account · opening Admin mode':'Welcome back')},
+ doRegister(){const f=ui.form,e={};const ph=(f.rp??'012-345 6789').replace(/[\s-]/g,'');
+  if((f.rn??'x').trim().length<3)e.rn='Enter your full name';if(!/^\S+@\S+\.\S+$/.test(f.re??'faizal.demo@example.com'))e.re='Enter a valid email';if(!/^(\+?60|0)1\d{8,9}$/.test(ph))e.rp='Enter a Malaysian mobile number, e.g. 012-345 6789';
+  if(!/^(?=.*[A-Za-z])(?=.*\d).{8,}$/.test(f.rpw??'demo1234'))e.rpw='Use 8+ characters with a letter and a number';
+  if(f.rref&&!/^SIB[A-Z0-9]{5}$/.test(f.rref.toUpperCase()))e.rref='This referral code isn’t valid. Check it or leave it blank.';
+  if(f.rref&&f.rref.toUpperCase()===S.user.code)e.rref='You can’t use your own code';
+  if(!f.rt)e.rt='Please accept the Terms of Use and Privacy Policy';
+  ui.err=e;if(Object.keys(e).length){render();return}S.auth='otp';render(true)},
+ doOtp(){S.role='customer';S.stack=[];if(ui.form.rn)S.user.name=ui.form.rn;if(ui.form.re)S.user.email=ui.form.re;render(true);
+  setTimeout(()=>push('customer','Welcome to SIB',(ui.form.rref?'Referral code applied. ':'')+'You got 50 welcome points.',['points']),400)},
+ logout(){S.role=null;S.auth='welcome';S.stack=[];render(true)},
+ switchRole:a=>{S.role=a;S.stack=[];render(true)},
+ delAcc(){ui.sheet=()=>`<div class="h3" style="color:var(--bad)">Delete your account?</div><p class="muted small">Your profile and cars are removed and personal data is anonymised. Paid orders are kept for accounting, as required by law. This can’t be undone.</p><div class="btns"><button class="btn ghost" data-act="closeSheet">Keep account</button><button class="btn" style="background:var(--bad)" data-act="delYes">Delete</button></div>`;drawOverlay()},
+ delYes(){ui.sheet=null;toast('Demo only: account not deleted');drawOverlay()},
+ notifSet(){ui.sheet=()=>`<div class="h3" style="margin-bottom:12px">Notification settings</div><div class="list"><div class="li"><div class="grow"><div class="t">Bookings & payments</div><div class="s">Always on: confirmations, reminders, status</div></div><span class="toggle on" style="opacity:.5"></span></div><div class="li"><div class="grow"><div class="t">Promotions & new events</div><div class="s">Offers and broadcasts from SIB</div></div><button class="toggle ${S.prefs.promo?'on':''}" data-act="promo" aria-label="Promotions"></button></div></div>`;drawOverlay()},
+ promo(){S.prefs.promo=!S.prefs.promo;drawOverlay()},
+ wa:a=>{const msg=a?`Hi SIB, I have a question about ${a}.`:'Hi SIB, I have a question.';ui.sheet=()=>`<div class="row" style="margin-bottom:10px"><div style="width:40px;height:40px;border-radius:50%;background:var(--wa);display:grid;place-items:center">${WA.replace('<svg','<svg style="width:24px;height:24px;fill:#fff"')}</div><div class="grow"><div class="h3">Chat with SIB on WhatsApp</div><div class="small muted">SIB Service Centre · <span class="mono">${S.wa}</span> (set by HQ)</div></div></div>
+  <div class="lbl" style="margin:12px 0 6px">Message we’ll pre-fill</div><div class="card" style="background:#E7F8EE;border-color:#C9EFD7">${esc(msg)}</div>
+  <a class="btn" style="background:var(--wa);margin-top:14px;text-decoration:none" href="https://wa.me/?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">Open WhatsApp</a><div class="hint" style="text-align:center;margin-top:8px">Demo opens WhatsApp without a number. The live app uses SIB’s official number.</div>`;drawOverlay()},
+ pt:a=>{S.pt=a;render()}, ptGo:a=>{S.pt=a;tab('services')},
+ cat:a=>{ui.seg.cat=a;render()},
+ seg:a=>{const [k,v]=a.split('|');ui.seg[k]=v;render(true)},
+ learnSeg:a=>{ui.seg.learn=a;tab('learn')},
+ addSvc:a=>{addSvcToCart(a);render()},
+ bookNow:a=>{const s=svc(a);let vid=S.defVeh;if(!s.pt.includes(model(veh(vid).model).pt)){const alt=S.vehicles.find(v=>s.pt.includes(model(v.model).pt));if(!alt){toast('Add a matching car to My Garage first');return}vid=alt.id}
+  const ok=addWithVeh(a,vid,'book');if(ok)startBook(S.cart.filter(i=>i.k==='svc').map(i=>i.sid),vid)},
+ replaceCart:a=>{const [sid,vid,then]=a.split('|');S.cart=S.cart.filter(i=>i.k!=='svc');S.cart.push({k:'svc',sid,vid});ui.sheet=null;if(then==='book')startBook([sid],vid);else{toast('Cart replaced');render()}},
+ rmCart:a=>{S.cart.splice(+a,1);render()},
+ qty:a=>{const [ix,d]=a.split('|').map(Number);const it=S.cart[ix];const {x}=tSess(it.sess);it.qty=Math.max(1,Math.min(x.seats-x.taken,it.qty+d));render()},
+ checkout(){if(S.cart.some(i=>i.k==='svc'))startBook();else{const tr=S.cart.filter(i=>i.k==='trn');const items=tr.map(i=>{const {t,x}=tSess(i.sess);return{n:`${t.n} · ${i.qty} pax`,p:(isMember()?x.m:x.p)*i.qty}});const total=items.reduce((a,b)=>a+b.p,0);
+  tr.forEach(i=>{tSess(i.sess).x.taken+=i.qty});createOrderAndPay({kind:'training',items,total,ptsNow:Math.floor(total/100*mult()),trn:tr.map(i=>({sess:i.sess,qty:i.qty}))})}},
+ startBook:()=>startBook(),
+ bookFor:a=>{S.defVeh=a;startBook(null,a)},
+ bookAgain:a=>{const b=S.bookings.find(x=>x.id===a);S.cart=S.cart.filter(i=>i.k!=='svc');b.items.forEach(id=>S.cart.push({k:'svc',sid:id,vid:b.veh}));toast('Services added to cart');go('cart')},
+ defVeh:a=>{S.defVeh=a;S.pt=model(veh(a).model).pt;toast('Default car updated');render()},
+ cpt:a=>{ui.form.cpt=a;ui.form.cb=null;ui.form.cm=null;render()},
+ addCarModel:a=>{const m=model(a);ui.form={cpt:m.pt,cb:m.b,cm:m.id};go('addcar')},
+ saveCar(){const f=ui.form;const pt=f.cpt||'EV';const bs=BRANDS.filter(b=>MODELS.some(m=>m.b===b.id&&m.pt===pt));const b=f.cb&&bs.some(x=>x.id===f.cb)?f.cb:bs[0].id;const ms=MODELS.filter(m=>m.b===b&&m.pt===pt);const mid=ms.some(m=>m.id===f.cm)?f.cm:ms[0].id;
+  const plate=(f.cplate??'VLB 1234').toUpperCase().trim();if(!/^[A-Z]{1,3}\s?\d{1,4}\s?[A-Z]?$/.test(plate)){ui.err={cplate:'Use a plate like VLB 1234 or WB 8812 Q'};render();return}
+  if(S.vehicles.some(v=>v.plate.replace(/\s/g,'')===plate.replace(/\s/g,''))){ui.err={cplate:'This plate is already in your garage'};render();return}
+  const id='v'+Date.now();S.vehicles.push({id,model:mid,plate,year:+(f.cy||2025),colour:f.cc||'Black'});ui.err={};ui.form={};S.stack.pop();toast('Car added to My Garage');render()},
+ bkVeh:a=>{S.draft.vid=a;render()},
+ bkStep:a=>{ui.bkStep=+a;ui.err={};render(true)},
+ bkDate:a=>{S.draft.date=a;S.draft.time=null;render()},
+ bkTime:a=>{S.draft.time=a;render()},
+ bkForm(){const f={...S.draft.form};['bn','bp','be','bic'].forEach(k=>{if(ui.form[k]!=null)f[k]=ui.form[k]});const e={};
+  if(f.bn.trim().length<3)e.bn='Enter the full name as per IC';if(!/^(\+?60|0)1\d{8,9}$/.test(f.bp.replace(/[\s-]/g,'')))e.bp='Enter a Malaysian mobile number';if(!/^\S+@\S+\.\S+$/.test(f.be))e.be='Enter a valid email';
+  const d=f.bic.replace(/\D/g,'');if(d.length!==12)e.bic='IC must be 12 digits: YYMMDD-PB-####';else{const mm=+d.slice(2,4),dd=+d.slice(4,6);if(mm<1||mm>12||dd<1||dd>31)e.bic='The first 6 digits must be a valid date of birth'}
+  ui.err=e;S.draft.form=f;if(Object.keys(e).length){render();return}ui.bkStep=4;render(true)},
+ proceedPay(){if(!ui.form.bt){ui.err={bt:'Please accept the policy to continue'};render();return}const d=S.draft;
+  const si=slotInfo(d.date,d.time);
+  if(S.race&&si.left>=1){S.race=false;S.seed[d.date+' '+d.time]=S.cap;ui.sheet=()=>`<div class="ico" style="background:var(--warn-soft);color:var(--warn);margin-bottom:10px">${ic('clock')}</div><div class="h3">That slot was just taken</div><p class="muted small">Another customer secured ${fTime(d.time)} on ${fShort(d.date)} a moment ago. Nothing was charged. Please choose another time.</p><button class="btn" data-act="raceBack">Choose another time</button>`;drawOverlay();renderPanel();return}
+  if(si.left<1){toast('Slot just got taken, please choose another time');ui.bkStep=2;render();return}
+  const b={id:'b'+Date.now(),no:'BK-'+rnd(6),who:'me',name:d.form.bn,veh:d.vid,items:[...d.items],date:d.date,time:d.time,status:'PENDING_PAYMENT',hold:Date.now()+S.holdMin*60e3,form:{...d.form},prices:Object.fromEntries(d.items.map(id=>[id,priceOf(svc(id))]))};
+  S.bookings.push(b);const items=d.items.map(id=>({n:svc(id).n,p:priceOf(svc(id))}));
+  const tr=S.cart.filter(i=>i.k==='trn');tr.forEach(i=>{const {t,x}=tSess(i.sess);items.push({n:`${t.n} · ${i.qty} pax`,p:(isMember()?x.m:x.p)*i.qty});x.taken+=i.qty});
+  const total=items.reduce((a,x)=>a+x.p,0);const svcTot=d.items.reduce((a,id)=>a+priceOf(svc(id)),0);
+  S.stack=S.stack.filter(x=>x.s!=='book');
+  createOrderAndPay({kind:'service',items,total,booking:b.id,ptsPending:Math.floor(svcTot/100*mult()),ptsNow:Math.floor((total-svcTot)/100*mult()),trn:tr.map(i=>({sess:i.sess,qty:i.qty}))})},
+ raceBack(){ui.sheet=null;S.draft.time=null;ui.bkStep=2;render(true)},
+ payM:a=>{ui.pay.m=a;render()}, payEw:a=>{ui.pay.ew=a;render()},
+ payNow(){const c=cur();const o=S.orders.find(x=>x.id===c.order);const b=o.booking&&S.bookings.find(x=>x.id===o.booking);if(b&&b.status!=='PENDING_PAYMENT'){toast('This hold has ended');return}
+  const p=ui.pay;const method=p.m==='fpx'?'FPX · '+(p.bank||'Maybank2u'):p.m==='card'?'Card · Visa ••4242 (test)':(p.ew||'Touch ’n Go eWallet');
+  ui.paying='Waiting for '+(p.m==='fpx'?p.bank:p.m==='card'?'card authorisation':'e-wallet approval')+'…';render();
+  setTimeout(()=>{ui.paying='Gateway callback received · verifying signature…';render()},1100);
+  setTimeout(()=>{ui.paying=null;completePay(o,method);S.stack=S.stack.filter(x=>x.s!=='pay');go('payres',{order:o.id})},2200)},
+ payFail(){const c=cur();const o=S.orders.find(x=>x.id===c.order);o.status='failed';S.stack=S.stack.filter(x=>x.s!=='pay');go('payres',{order:o.id})},
+ cancelPay(){A.payFail()},
+ retryPay:a=>{const o=S.orders.find(x=>x.id===a);o.status='pending';S.stack=S.stack.filter(x=>x.s!=='payres');go('pay',{order:o.id})},
+ viewBk:a=>{S.stack=[];S.tab='bookings';go('bkd',{id:a})},
+ resched:a=>{const b=S.bookings.find(x=>x.id===a);ui.sheet=()=>{const days=[];for(let i=1;i<21;i++)days.push(addD(i));const sd=ui.rs?.d;return `<div class="h3">Reschedule ${b.no}</div><p class="small muted">The new slot is held first, then your old slot is released.</p><div class="days" style="margin:0 -16px 12px">${days.map(x=>{const s=iso(x);return `<button class="day ${sd===s?'on':''} ${dayOpen(x)?'':'off'}" data-act="rsD" data-arg="${s}"><span class="dw">${x.toLocaleDateString('en-MY',{weekday:'short'})}</span><span class="dn">${x.getDate()}</span><span class="dm">${x.toLocaleDateString('en-MY',{month:'short'})}</span></button>`}).join('')}</div>${sd?`<div class="slots">${HOURS.map(h=>{const si=slotInfo(sd,h);return `<button class="slot ${si.left?'':'full'} ${ui.rs.t===h?'on':''}" data-act="rsT" data-arg="${h}"><b>${fTime(h).replace(':00','')}</b><span>${si.left?si.left+' left':'Full'}</span></button>`}).join('')}</div>`:''}<button class="btn" style="margin-top:14px" data-act="rsGo" data-arg="${b.id}" ${ui.rs?.t?'':'disabled'}>Confirm new slot</button>`};ui.rs={};drawOverlay()},
+ rsD:a=>{ui.rs={d:a};drawOverlay()}, rsT:a=>{ui.rs.t=a;drawOverlay()},
+ rsGo:a=>{const b=S.bookings.find(x=>x.id===a);b.date=ui.rs.d;b.time=ui.rs.t;ui.sheet=null;push('customer','Booking rescheduled',`${b.no} moved to ${fShort(b.date)} at ${fTime(b.time)}.`,['bkd',{id:b.id}]);S.notifs.a.unshift({id:'na'+Date.now(),t:'Booking rescheduled',b:`${b.name} · now ${fShort(b.date)} ${b.time}`,d:nowStamp(),read:false});render()},
+ cancelBk:a=>{ui.sheet=()=>`<div class="h3">Cancel this booking?</div><p class="muted small">Your slot will be released to other customers. Refunds are handled by SIB HQ to your original payment method.</p><div class="btns"><button class="btn ghost" data-act="closeSheet">Keep booking</button><button class="btn" style="background:var(--bad)" data-act="cxYes" data-arg="${a}">Cancel booking</button></div>`;drawOverlay()},
+ cxYes:a=>{const b=S.bookings.find(x=>x.id===a);b.status='CANCELLED';ui.sheet=null;S.notifs.a.unshift({id:'na'+Date.now(),t:'Booking cancelled',b:`${b.name} cancelled ${b.no} (${fShort(b.date)} ${b.time})`,d:nowStamp(),read:false});toast('Booking cancelled · slot released');render()},
+ tooLate(){toast('Changes close 24 hours before the slot')},
+ showTicket:a=>{const t=S.tickets.find(x=>x.id===a);const {t:tr,x}=tSess(t.sess);ui.sheet=()=>`<div style="text-align:center"><div class="h3">${esc(tr.n)}</div><div class="small muted">${fDate(x.date)} · ${x.t}</div><div class="qr" style="margin:14px 0">${qrSvg(t.code,170)}</div><div class="mono" style="font-weight:700">${t.code}</div><div class="hint" style="margin-top:6px">Show at the venue. SIB scans it to mark attendance.</div></div>`;drawOverlay()},
+ setRate:a=>{ui.rate=+a;render()},
+ submitRate:a=>{const b=S.bookings.find(x=>x.id===a);const st=ui.rate,c=(ui.form.rc||'').trim();b.rated=st;
+  b.items.forEach(id=>svc(id).ratings.push({id:'r'+Date.now()+id,stars:st,c:c||['','Not happy with the service.','Could be better.','It was okay.','Good service.','Excellent service!'][st],who:S.user.name.split(' ')[0]+' '+S.user.name.split(' ').slice(-1)[0][0]+'.',hidden:false,reply:''}));
+  if(st<=2)S.notifs.a.unshift({id:'na'+Date.now(),t:'Low rating alert',b:`${st}★ from ${S.user.name}: "${c||'No comment'}"`,d:nowStamp(),read:false});
+  ui.form.rc='';ui.rate=5;S.stack.pop();toast('Thanks! Your rating was posted');render()},
+ openNotif:a=>{const n=S.notifs.c.find(x=>x.id===a);n.read=true;if(n.go){if(n.go[0]==='bkd'||n.go[0]==='rate'){const b=S.bookings.find(x=>x.id===n.go[1].id);if(n.go[0]==='rate'&&b.rated){go('bkd',n.go[1]);return}}go(n.go[0],n.go[1]||{})}else render()},
+ readAll(){S.notifs.c.forEach(n=>n.read=true);render()}, readAllA(){S.notifs.a.forEach(n=>n.read=true);render()},
+ subscribe:a=>{const pl=PLANS.find(p=>p.id===a);createOrderAndPay({kind:'membership',items:[{n:`${pl.n} · 1 ${pl.per}`,p:pl.p}],total:pl.p,plan:a,ptsNow:Math.floor(pl.p/100)})},
+ renew(){A.subscribe(S.sub.plan)},
+ copyCode(){const t=S.user.code;try{navigator.clipboard.writeText(t).then(()=>toast('Code copied'),()=>toast('Code: '+t))}catch(e){toast('Code: '+t)}},
+ shareCode(){const msg=`Service your EV, PHEV or hybrid with SIB. Download the SIB app and use my code ${S.user.code} for 50 welcome points.\nGoogle Play: [link] · App Store: [link]`;ui.sheet=()=>`<div class="h3" style="margin-bottom:10px">Share your code</div><div class="card" style="white-space:pre-line;font-size:13px">${esc(msg)}</div><div class="btns" style="margin-top:12px"><button class="btn ghost" data-act="copyShare">${ic('copy','sm')} Copy message</button><a class="btn" style="background:var(--wa);text-decoration:none" href="https://wa.me/?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">WhatsApp</a></div><div class="hint" style="text-align:center;margin-top:8px">In the live app this opens the phone’s share sheet.</div>`;ui.shareMsg=msg;drawOverlay()},
+ copyShare(){try{navigator.clipboard.writeText(ui.shareMsg).then(()=>toast('Message copied'),()=>toast('Select the text to copy'))}catch(e){toast('Select the text to copy')}},
+ tsess:a=>{ui.form.tsess=a;ui.form.tqty=1;render()},
+ tqty:a=>{const c=cur();const t=S.train.find(x=>x.id===c.id);const sid=ui.form.tsess||t.sess.find(x=>x.seats>x.taken).id;const x=t.sess.find(s=>s.id===sid);ui.form.tqty=Math.max(1,Math.min(x.seats-x.taken,(ui.form.tqty||1)+(+a)));render()},
+ addTrn(){const c=cur();const t=S.train.find(x=>x.id===c.id);const sid=ui.form.tsess||t.sess.find(x=>x.seats>x.taken).id;const q=ui.form.tqty||1;const ex=S.cart.find(i=>i.k==='trn'&&i.sess===sid);if(ex)ex.qty=q;else S.cart.push({k:'trn',sess:sid,qty:q});toast(`Added ${q} seat${q>1?'s':''} to cart`);render()},
+ buyTrn(){const c=cur();const t=S.train.find(x=>x.id===c.id);const sid=ui.form.tsess||t.sess.find(x=>x.seats>x.taken).id;const q=ui.form.tqty||1;const {x}=tSess(sid);
+  const total=(isMember()?x.m:x.p)*q;x.taken+=q;createOrderAndPay({kind:'training',items:[{n:`${t.n} · ${q} pax`,p:total}],total,ptsNow:Math.floor(total/100*mult()),trn:[{sess:sid,qty:q}]})},
+ rsvp:a=>{if(S.rsvp[a]){delete S.rsvp[a];toast('Registration cancelled')}else{S.rsvp[a]=true;toast('You’re registered')}render()},
+ /* admin */
+ adate:a=>{ui.form.adate=a;render()},
+ aStatus:a=>{const [id,st]=a.split('|');const b=S.bookings.find(x=>x.id===id);b.status=st;
+  S.audit.unshift({t:`${STL[st][0]} · ${b.no}`,who:'HQ Admin (Nadia)',d:'Today '+nowStamp()});
+  if(b.who==='me'){
+   if(st==='CHECKED_IN')S.notifs.c.unshift({id:'n'+Date.now(),t:'Checked in',b:`We’ve received your ${vName(veh(b.veh))}. We’ll update you as we go.`,d:'now',read:false,go:['bkd',{id:b.id}]});
+   if(st==='IN_PROGRESS')S.notifs.c.unshift({id:'n'+Date.now(),t:'Service in progress',b:'Our technicians are working on your car.',d:'now',read:false,go:['bkd',{id:b.id}]});
+   if(st==='COMPLETED'){const o=S.orders.find(x=>x.id===b.order);const pts=o?.ptsPending||Math.floor(bTotal(b)/100);S.ledger.push({d:TODAY,t:'Service completed · '+b.no,v:pts});
+    S.notifs.c.unshift({id:'n'+Date.now(),t:'Your car is ready',b:`Service completed. ${pts} points added. Tap to rate your service.`,d:'now',read:false,go:['rate',{id:b.id}]});
+    const fr=S.friends.find(f=>f.pts===0);}
+  }
+  toast(STL[st][0]+(b.who==='me'?' · customer notified':''));render()},
+ reveal:a=>{ui.reveal=a;const b=S.bookings.find(x=>x.id===a);S.audit.unshift({t:'Revealed IC · '+b.no,who:'HQ Admin (Nadia)',d:'Today '+nowStamp()});render()},
+ scan(){const cand=aB().find(b=>b.status==='CONFIRMED'&&b.date===TODAY)||aB().find(b=>b.status==='CONFIRMED');ui.sheet=()=>`<div style="text-align:center"><div style="height:200px;border-radius:18px;background:#111;position:relative;display:grid;place-items:center;overflow:hidden"><div style="width:140px;height:140px;border:3px solid var(--orange);border-radius:16px"></div><div style="position:absolute;left:0;right:0;top:50%;height:2px;background:var(--orange);box-shadow:0 0 12px var(--orange)"></div></div><p class="small muted">Point the camera at the customer’s booking or ticket QR.</p>${cand?`<button class="btn" data-act="scanHit" data-arg="${cand.id}">Simulate scan · ${cand.no}</button>`:'<div class="small">No confirmed bookings to scan.</div>'}</div>`;drawOverlay()},
+ scanHit:a=>{ui.sheet=null;A.aStatus(a+'|CHECKED_IN');go('abd',{id:a})},
+ svcToggle:a=>{const s=svc(a);s.active=!s.active;S.audit.unshift({t:(s.active?'Showed':'Hid')+' service · '+s.n,who:'HQ Admin (Nadia)',d:'Today '+nowStamp()});toast(s.active?'Service is live in the app':'Service hidden from the app');render()},
+ svcPrice:a=>{const [id,d]=a.split('|');const s=svc(id);s.p=Math.max(1000,s.p+(+d));s.m=Math.max(900,s.m+(+d));S.audit.unshift({t:`Updated price · ${s.n} → ${RM(s.p)}`,who:'HQ Admin (Nadia)',d:'Today '+nowStamp()});render()},
+ cap:a=>{S.cap=Math.max(1,Math.min(10,S.cap+(+a)));S.audit.unshift({t:'Slot capacity → '+S.cap+' cars',who:'HQ Admin (Nadia)',d:'Today '+nowStamp()});render()},
+ sun(){S.sunClosed=!S.sunClosed;render()},
+ evPub:a=>{const e=S.events.find(x=>x.id===a);e.pub=!e.pub;if(e.pub)S.notifs.c.unshift({id:'n'+Date.now(),t:'New event: '+e.n,b:fDate(e.date)+' · '+e.v,d:'now',read:false,go:['event',{id:e.id}]});toast(e.pub?'Event published':'Event hidden');render()},
+ rHide:a=>{const [sid,rid]=a.split('|');const r=svc(sid).ratings.find(x=>x.id===rid);r.hidden=!r.hidden;S.audit.unshift({t:(r.hidden?'Hid':'Unhid')+' review on '+svc(sid).n,who:'HQ Admin (Nadia)',d:'Today '+nowStamp()});render()},
+ rReply:a=>{const [sid,rid]=a.split('|');ui.sheet=()=>`<div class="h3" style="margin-bottom:10px">Reply publicly</div><textarea class="inp" id="rp-t">Thank you for the feedback. We’re sorry about the wait and have added more staff at peak hours.</textarea><button class="btn" style="margin-top:12px" data-act="rReplyGo" data-arg="${a}">Post reply</button>`;drawOverlay()},
+ rReplyGo:a=>{const [sid,rid]=a.split('|');svc(sid).ratings.find(x=>x.id===rid).reply=document.getElementById('rp-t').value;ui.sheet=null;toast('Reply posted on the service page');render()},
+ castSeg:a=>{ui.form.seg=a;render()},
+ sendCast(){const t=ui.form.ct??'Weekend promo: 15% off A/C service',b=ui.form.cb2??'Keep cool this weekend. Book a Cabin Filter & A/C Service in the app and save 15%.';const seg=ui.form.seg||'all';
+  const hits=seg==='all'||(seg==='mem'&&isMember())||S.vehicles.some(v=>model(v.model).pt===seg);
+  if(hits)S.notifs.c.unshift({id:'n'+Date.now(),t,b,d:'now',read:false,go:['svc',{id:'s5'}]});
+  S.audit.unshift({t:'Sent broadcast · '+t,who:'HQ Admin (Nadia)',d:'Today '+nowStamp()});toast(hits?'Sent · switch to customer view to see it':'Sent · the demo customer is not in this segment');render()},
+ openPanel(){document.getElementById('panel').classList.add('open')},
+};
+
+/* ---------- presenter panel ---------- */
+const FN=[
+ ['Register / Login for Admin & User',()=>{S.role=null;S.auth='register';S.stack=[]}],
+ ['Add to cart (services)',()=>cust('services',[['model',{id:'atto3'}]])],
+ ['Booking / appointment',()=>{cust('home');startBook(['s1'],'v1')}],
+ ['Booking time lock (hold → lock)',()=>{cust('home');startBook(['s1'],'v1');S.draft.date=iso(nextOpen(1));ui.bkStep=2}],
+ ['Notifications (Admin & User)',()=>cust('home',[['notifs']])],
+ ['Services for EV / PHEV / Hybrid',()=>cust('services')],
+ ['Car brand section',()=>cust('services')],
+ ['Car models (EV / PHEV / Hybrid)',()=>cust('services',[['brand',{id:'bmw'}]])],
+ ['Booking form (Name, Phone, Email, IC)',()=>{cust('home');startBook(['s1'],'v1');S.draft.date=iso(nextOpen(2));S.draft.time='15:00';ui.bkStep=3}],
+ ['Admin HQ manages the portal',()=>adm('amanage')],
+ ['Payment gateway integration',()=>{cust('home');startBook(['s9'],'v1');S.draft.date=iso(nextOpen(2));S.draft.time='16:00';ui.bkStep=4;ui.form.bt=true}],
+ ['Membership subscription (pay in app)',()=>cust('home',[['membership']])],
+ ['Purchase history',()=>cust('profile',[['history']])],
+ ['Point collection',()=>cust('profile',[['points']])],
+ ['Star rating',()=>{const b=mine().find(x=>x.status==='COMPLETED'&&!x.rated);cust('bookings',b?[['rate',{id:b.id}]]:[])}],
+ ['Referral code',()=>cust('profile',[['referral']])],
+ ['WhatsApp floating button',()=>{cust('home');setTimeout(()=>A.wa(''),50)}],
+ ['Training section',()=>{ui.seg.learn='train';cust('learn')}],
+ ['Add to cart / buy training',()=>cust('learn',[['training',{id:'t1'}]])],
+ ['Upcoming events',()=>{ui.seg.learn='events';cust('learn')}],
+ ['Terms & Policy',()=>cust('profile',[['legals']])],
+];
+function cust(t,st=[]){S.role='customer';S.tab=t;S.stack=st.map(([s,p])=>({s,...(p||{})}));ui.sheet=null}
+function adm(t,st=[]){S.role='admin';S.admTab=t;S.stack=st.map(([s,p])=>({s,...(p||{})}));ui.sheet=null}
+function renderPanel(){const p=document.getElementById('panel');const pend=S.bookings.find(b=>b.status==='PENDING_PAYMENT');
+ p.innerHTML=`<div class="row" style="align-items:flex-start"><div class="grow"><div class="lbl">Proof of concept · for SIB review</div><h2 style="margin-top:4px">SIB Service App</h2><p class="small" style="margin:6px 0 0;color:#5A5878;line-height:1.5">EV, PHEV & Hybrid service booking. Tap any function to jump to it, or follow the demo flow. All data is sample data.</p></div><button class="ibtn demo-close" data-act="closePanel" aria-label="Close guide" style="display:none">${ic('x')}</button></div>
+ <div class="pcard"><div class="lbl" style="margin-bottom:8px">View as</div><div class="ctl"><button class="${S.role==='customer'?'on':''}" data-p="customer">Customer</button><button class="${S.role==='admin'?'on':''}" data-p="admin">HQ Admin</button><button class="${!S.role?'on':''}" data-p="logout">Login screen</button></div></div>
+ <div class="pcard"><div class="lbl" style="margin-bottom:8px">Suggested demo flow · about 6 minutes</div><ol class="flow"><li>Register with a referral code, verify OTP</li><li>Services → pick a car type → brand → model</li><li>Book now → date & time → form with IC → review</li><li>Pay in sandbox, watch the slot hold timer → booking locked</li><li>Switch to HQ Admin → see the new booking alert</li><li>Check in → start → complete the booking</li><li>Back to Customer → points credited → rate the service</li><li>Membership, training purchase, events, referral, WhatsApp, Terms</li></ol></div>
+ <div class="pcard"><div class="lbl" style="margin-bottom:6px">The 21 functions requested</div>${FN.map((f,i)=>`<button class="fn" data-fn="${i}"><span class="n">${String(i+1).padStart(2,'0')}</span><span>${f[0]}</span><span class="go">Show →</span></button>`).join('')}</div>
+ <div class="pcard"><div class="lbl" style="margin-bottom:8px">Presenter controls</div><div class="ctl">
+  <button class="${S.race?'on':''}" data-p="race">${S.race?'Slot race armed':'Simulate slot race'}</button>
+  <button data-p="expire" ${pend?'':'disabled style="opacity:.45"'}>Expire payment hold now</button>
+  <button data-p="memb">${isMember()?'Expire membership':'Make demo user a member'}</button>
+  <button data-p="reset">Reset demo</button></div>
+  <p class="small" style="color:#5A5878;margin:10px 0 0;line-height:1.5"><b>Slot race:</b> the next “Proceed to payment” acts as if another customer took the same slot a moment earlier. <b>Expire hold:</b> shows the slot being released when payment isn’t finished in ${S.holdMin} minutes.</p></div>
+ <p class="small" style="color:#5A5878;margin:14px 4px">Prepared by OS Startup Sdn Bhd · Prices, plans, brands and policies are placeholders pending SIB confirmation.</p>`;
+ const cl=p.querySelector('.demo-close');if(cl&&window.matchMedia&&matchMedia('(max-width:860px)').matches)cl.style.display='grid'}
+document.getElementById('panel').addEventListener('click',e=>{const t=e.target.closest('[data-fn],[data-p],[data-act]');if(!t)return;const p=document.getElementById('panel');
+ if(t.dataset.act==='closePanel'){p.classList.remove('open');return}
+ if(t.dataset.fn!=null){FN[+t.dataset.fn][1]();p.classList.remove('open');render(true);return}
+ const k=t.dataset.p;
+ if(k==='customer')cust(S.tab||'home');if(k==='admin')adm(S.admTab||'adash');if(k==='logout'){S.role=null;S.auth='welcome';S.stack=[]}
+ if(k==='race'){S.race=!S.race;toast(S.race?'Next payment attempt will lose the slot race':'Slot race off')}
+ if(k==='expire'){S.bookings.filter(b=>b.status==='PENDING_PAYMENT').forEach(b=>{b.hold=Date.now()-1});startTimer();renderPanel();return}
+ if(k==='memb'){if(isMember()){S.sub.status='expired';S.sub.end=iso(addD(-1));toast('Membership expired · member prices removed')}else{S.sub={plan:'gold',start:TODAY,end:iso(addD(365)),status:'active',no:'SIB 4471 2093'};toast('Demo user is now a Gold member')}}
+ if(k==='reset'){clearInterval(S.timer);S=fresh();Object.assign(ui,{sheet:null,form:{},err:{},seg:{},bkStep:1});toast('Demo reset')}
+ p.classList.remove('open');render(true)});
+
+/* ---------- events ---------- */
+app.addEventListener('click',e=>{
+ const t=e.target.closest('[data-act],[data-go],[data-tab]');if(!t)return;
+ if(t.classList.contains('scrim')&&e.target.closest('.sheet'))return;
+ if(t.tagName==='A')return;
+ if(t.dataset.tab){tab(t.dataset.tab);return}
+ if(t.dataset.go){const p={};if(t.dataset.id)p.id=t.dataset.id;if(t.dataset.go==='training'||t.dataset.go==='rate'){ui.form.tsess=null;ui.form.tqty=1}go(t.dataset.go,p);return}
+ const a=t.dataset.act;if(A[a]){e.preventDefault();A[a](t.dataset.arg)}});
+app.addEventListener('input',e=>{const t=e.target;
+ if(t.dataset.ic){let d=t.value.replace(/\D/g,'').slice(0,12);let v=d.slice(0,6);if(d.length>6)v+='-'+d.slice(6,8);if(d.length>8)v+='-'+d.slice(8);t.value=v}
+ if(t.dataset.f)ui.form[t.dataset.f]=t.value;
+ if(t.dataset.pay)ui.pay[t.dataset.pay]=t.value});
+app.addEventListener('change',e=>{const t=e.target;if(t.dataset.fc)ui.form[t.dataset.fc]=t.checked;if(t.dataset.f){ui.form[t.dataset.f]=t.value;if(t.dataset.rerender){ui.form.cm=null;render()}}if(t.dataset.pay)ui.pay[t.dataset.pay]=t.value});
+function tick(){const d=new Date();document.getElementById('clock').textContent=d.toLocaleTimeString('en-MY',{hour:'numeric',minute:'2-digit',hour12:false})}
+tick();setInterval(tick,20000);
+render(true);
+</script>
+
+</body>
+</html>
